@@ -1,2 +1,12 @@
+# Jekyll
 _site/
 .sass-cache/
+
+# Editor cache
+.~*
+*~
+*.kate-swp
+*.swp
+
+# File manager
+.directory
