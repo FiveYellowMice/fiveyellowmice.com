@@ -14,9 +14,8 @@ bilibili_username: FiveYellowMice
 bilibili_id: 1985403
 
 # Build settings
-#markdown: kramdown
-kramdown:
-  input: GFM
-
+markdown: redcarpet
+redcarpet: 
+  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
 exclude: [Gemfile, Gemfile.lock]
 permalink: /posts/:year/:month/:title.html
