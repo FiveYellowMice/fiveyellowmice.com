@@ -1,11 +1,29 @@
 ---
 layout: page
-title: About
+title: 关于
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+欢迎来到 FiveYellowMice 的博客！因为刚刚建成，所以什么都没有，这点还请见谅。
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+# 我为什么建这个博客？
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+俗话说的好，人类是一种犯贱的生物，你越不让它做某件事情，它就越想去做，当条件宽松了，反而没有做的欲望了。  
+中国禁止未成年人进网吧，但不禁止喝酒；澳大利亚禁止未成年人喝酒，但不禁止进网吧。但结果呢？中国未成年人进网吧的比澳大利亚还多，澳大利亚未成年人喝酒的也比中国多（我说的是比例）。
+
+几个月前我的时间比较宽松，结果什么都不干，看看动漫混过去了。  
+倒是这几个月，学习忙起来了，我反而开了一大堆坑……
+
+好吧我也不知道我能不能一个个把这些坑填完，总之就这么看吧，也别指靠我能干出什么大事。
+
+# 我主要在这里发布哪些内容？
+
+首先是……算了不说了，说了要是不填也没意义，这段内容就先放着吧，等我实际行动了再加内容。
+
+# 自我介绍
+
+如同在页面下方所说的一样，我就是个早就不该中二的中二少年。纯正的中国大陆人，爱好是电脑技术以及动漫。目前在澳大利亚进行高中学习。
+
+我也挺喜欢写一些政治的敏感内容，比如坦克啦，坦克啦，坦克啦……不过还是不敢写太多，怕水表。
+
+我也是一名自由软件狂热者，最重要的一点，我用 Linux ，什么？非主流？难道你让我去用 Windows 这种闭源又剥夺用户权利的垃圾玩意，或者是 OS X 这样封闭又不完整的“艺术品”吗？

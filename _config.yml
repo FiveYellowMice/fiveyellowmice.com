@@ -1,14 +1,22 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+title: FiveYellowMice's Blog
+email: hkz85825915@gmail.com
+description: >
+  我是一位早就不该中二的中二少年，最近又开了一个脑洞，于是就开了这个博客。
+baseurl: ""
+url: "https://fiveyellowmice.github.io"
+
+# Social settings
+github_username: FiveYellowMice
+googleplus_username: 黄凯哲
+googleplus_id: 112855887065747609809
+bilibili_username: FiveYellowMice
+bilibili_id: 1985403
 
 # Build settings
-markdown: kramdown
+#markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude: [Gemfile, Gemfile.lock]
+permalink: /posts/:year/:month/:title.html
