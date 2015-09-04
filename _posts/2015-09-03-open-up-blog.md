@@ -2,6 +2,7 @@
 layout: post
 title: "我开博客了！"
 date: 2015-09-03 22:53 +1000
+comments: true
 categories: 个人 更新
 ---
 
