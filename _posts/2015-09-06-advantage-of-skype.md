@@ -1,7 +1,7 @@
 ---
-layout: post
 title: "用 Skype 的好处"
 date: 2015-09-06 20:34 +1000
+categories: 个人 软件
 ---
 
 ![Skype logo]({{ site.baseurl }}/images/2015/09/Skype_logo.png)  

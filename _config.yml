@@ -28,3 +28,4 @@ defaults:
       type: "posts"
     values:
       comments: true
+      layout: post

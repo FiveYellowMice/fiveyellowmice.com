@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "“小白也能学会的 Galgame 制作”可能要弃坑了"
 date: 2015-09-06 15:24 +1000
 categories: ONScripter 更新 坏消息
