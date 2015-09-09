@@ -161,6 +161,11 @@
 /**
  * Page content
  */
+.page-description {
+    color: $grey-color;
+	font-style: italic
+}
+
 .page-content {
     padding: $spacing-unit 0;
 }
