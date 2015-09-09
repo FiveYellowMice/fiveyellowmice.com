@@ -1,6 +1,6 @@
 ---
 title: "RSS 的使用方法"
-date: 2015-09-08 13:54 +1000
+date: 2015-09-09 17:39 +1000
 categories: 软件 扫盲
 ---
 
@@ -55,7 +55,52 @@ RSS 是一种获取新闻或博客更新的一种十分便捷的方式，但是�
 	
 -	Microsoft&reg; Windows&reg;
 	
-	按照[这个](https://techbase.kde.org/Projects/KDE_on_Windows/Installation?setlang=zh-cn#KDE_Installer_for_Windows)页面的指示进行安装。英文的，不过别怕，看图就行了。
+	先下载[这个](http://download.kde.org/stable/kdewin/installer/kdewin-installer-gui-latest.exe.mirrorlist)，然后按照[这个](https://techbase.kde.org/Projects/KDE_on_Windows/Installation?setlang=zh-cn#KDE_Installer_for_Windows)页面的指示进行安装。英文的，不过别怕，看图就行了。
 	
 	记得在选择安装的包的时候选中 Akregator ，当然如果是我的话我就会全选啦。
 
+## 寻找 RSS 源
+
+有 RSS 源的网站很多，在不少新闻网站或博客上都会有提供，一般只要在主页上寻找 "RSS" 字样或者这样的图标：
+
+![RSS 图标](https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Feed-icon.svg/128px-Feed-icon.svg.png)
+
+这里以我的博客为例，在首页的底部，你就能看见“通过 RSS 关注我”这一行字，点开链接，大概会出现这样的一个鬼畜的页面：
+
+![RSS 在浏览器中的样子]({{ site.baseurl }}/images/2015/09/rss_browser.png)
+
+页面上并没有什么按钮可以点（除非你装了一些浏览器插件），里面的内容并不是给浏览器设计的，你要做的只是 **把地址栏里的地址选中，复制下来** 。
+
+## 加入 RSS 客户端
+
+以 Akregator 为例，在菜单中点 "Feed" ，然后点 "Add Feed" （请自行脑补中文会叫什么）。
+
+![点击添加源]({{ site.baseurl }}/images/2015/09/rss_menu_addfeed.png)
+
+在弹出的对话框中，将之前从浏览器地址栏中复制来的地址，粘帖上去。
+
+![粘帖地址]({{ site.baseurl }}/images/2015/09/rss_paste_url.png)
+
+最后点 "OK" 就好了！ Akregator 默认会在每 30 分钟的时候从网上刷新 RSS 内容。
+
+## 设置 Akregator
+
+Akregator 默认不会在收到更新时提醒，要让它提醒所有已添加的源的更新，需要更改设置。
+
+在 "Settings" 菜单中，选择 "Configure Akregator" （还是一样中文请自行脑补）。
+
+![Settings 菜单]({{ site.baseurl }}/images/2015/09/rss_menu_settings.png)
+
+在设置界面，将 "Use notifications for all feeds" （图中红框位置）勾选。点 "OK" 。
+
+![Settings 界面]({{ site.baseurl }}/images/2015/09/rss_settings.png)
+
+如果你对默认每 30 分钟刷新一次的设定感到不满，你也可以更改 "Fetch feeds every: " 后面的数字。
+
+Akregator 还有很多其他设置项，这个就要大家自己摸索了。
+
+----------------------
+
+最后，大家实践一下，就拿这个 RSS 来练一下手，如何？（坏笑）
+
+<https://fiveyellowmice.github.io/feed.xml>
