@@ -29,3 +29,8 @@ defaults:
     values:
       comments: true
       layout: post
+  -
+    scope:
+      path: ""
+    values:
+      cc_by_sa: true
