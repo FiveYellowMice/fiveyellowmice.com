@@ -18,6 +18,7 @@ markdown: redcarpet
 redcarpet: 
   extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
 exclude: [Gemfile, Gemfile.lock]
+enforce_ssl: fiveyellowmice.github.io
 permalink: /posts/:year/:month/:title.html
 
 # Defaults
