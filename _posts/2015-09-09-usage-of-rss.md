@@ -2,9 +2,9 @@
 title: "RSS 的使用方法"
 date: 2015-09-09 17:39 +1000
 categories: 软件 扫盲
+headpic: akregator.png
+headpic_alt: "Akregator 界面截图"
 ---
-
-![Akregator 界面截图]({{ site.baseurl }}/images/2015/09/akregator.png)
 
 RSS 是一种获取新闻或博客更新的一种十分便捷的方式，但是似乎随着几年前 [Google Reader](http://www.google.com/reader/about/) 的倒下， RSS 也变得越来越不景气了，想来真是可惜。
 

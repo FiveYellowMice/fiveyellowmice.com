@@ -2,9 +2,9 @@
 title: "“小白也能学会的 Galgame 制作”可能要弃坑了"
 date: 2015-09-06 15:24 +1000
 categories: ONScripter 更新 坏消息
+headpic: snapshot93.png
+headpic_alt: "onstut.pe.hu 的网页截图"
 ---
-
-![onstut.pe.hu 的网页截图]({{ site.baseurl }}/images/2015/09/snapshot93.png)
 
 就在几分钟之前，我把 <http://onstut.pe.hu/> 的主页上的“ Coming soon ”图标给删除了，也就意味着我曾经大摇大摆宣传的“小白也能学会的 Galgame 制作”系列迎来了本不应到来的尾声。我曾经计划着能做二十几讲呢，但现在看来，这样的希望有些不太现实了。
 

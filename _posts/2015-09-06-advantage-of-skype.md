@@ -3,9 +3,9 @@ title: "用 Skype 的好处"
 date: 2015-09-06 20:34 +1000
 categories: 个人 软件
 cc_by_sa: false
+headpic: Skype_logo.png
+headpic_alt: "Skype logo"
 ---
-
-![Skype logo]({{ site.baseurl }}/images/2015/09/Skype_logo.png)  
 
 Skype 是一个即时聊天 + 语音通话的服务，但是似乎在中国的知名度不高。但我发现它其实要比 QQ 微信好用很多（不包括空间跟朋友圈）。以下我列举一些使用 Skype 的好处。
 
