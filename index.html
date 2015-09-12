@@ -6,10 +6,10 @@ layout: default
 	
 	<p class="page-description">{{ site.description }}</p>
 	
-	<h1 class="page-heading">博文</h1>
+	<h1 class="page-heading">最新博文</h1>
 	
 	<ul class="post-list">
-		{% for post in site.posts %}
+		{% for post in site.posts limit:5 %}
 			<li>
 				<span class="post-meta">{{ post.date | date: "%Y 年 %m 月 %d 日 %H 时 %M 分" }}</span>
 
@@ -19,6 +19,10 @@ layout: default
 			</li>
 		{% endfor %}
 	</ul>
+	
+	{% if site.posts.size > 5 %}
+	<p class="see-all-posts"><a href="{{ site.baseurl }}/posts/">查看至今的所有博文</a></p>
+	{% endif %}
 	
 	<p class="rss-subscribe">通过 <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a> 关注我（<a href="{{ site.baseurl }}/posts/2015/09/usage-of-rss.html">怎么用？</a>）</p>
 	

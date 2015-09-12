@@ -1,0 +1,23 @@
+---
+layout: default
+title: 所有博文
+permalink: /posts/
+---
+
+<div class="all-posts">
+	
+	<h1 class="page-heading">所有博文</h1>
+	
+	<ul class="post-list">
+		{% for post in site.posts %}
+			<li>
+				<span class="post-meta">{{ post.date | date: "%Y 年 %m 月 %d 日 %H 时 %M 分" }}</span>
+
+				<h2>
+					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+				</h2>
+			</li>
+		{% endfor %}
+	</ul>
+	
+</div>
