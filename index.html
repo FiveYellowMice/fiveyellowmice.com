@@ -17,6 +17,10 @@ layout: default
 					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 				</h2>
 				
+				{% if post.headpic %}
+				<p><img src="{{ site.baseurl }}/images/{{ post.date | date: "%Y/%m" }}/{{ post.headpic }}"{% if post.headpic_alt %} alt="{{ post.headpic_alt }}"{% endif %}></p>
+				{% endif %}
+				
 				<p class="post-excerpt">{{ post.excerpt | strip_html }} <a href="{{ post.url | prepend: site.baseurl }}">继续阅读 &gt;&gt;</a></p>
 			</li>
 		{% endfor %}
