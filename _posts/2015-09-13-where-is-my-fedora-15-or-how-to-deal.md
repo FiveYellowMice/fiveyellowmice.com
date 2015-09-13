@@ -38,5 +38,4 @@ headpic_alt: "Fedora 23 提示 yum 已经被废弃"
 
 ----------------------
 
-原文：<http://smoogespace.blogspot.com.au/2015/09/where-is-my-fedora-15-or-how-to-deal.html>  
-遵循 CC-BY-SA 许可协议。
+[原文](http://smoogespace.blogspot.com.au/2015/09/where-is-my-fedora-15-or-how-to-deal.html)遵循 CC-BY-SA 许可协议。
