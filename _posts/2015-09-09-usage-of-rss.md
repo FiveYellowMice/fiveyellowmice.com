@@ -8,6 +8,8 @@ headpic_alt: "Akregator 界面截图"
 
 RSS 是一种获取新闻或博客更新的一种十分便捷的方式，但是似乎随着几年前 [Google Reader](http://www.google.com/reader/about/) 的倒下， RSS 也变得越来越不景气了，想来真是可惜。
 
+<!--more-->
+
 # RSS 是什么，有什么优点？
 
 就来段 [RSS 的维基百科条目](https://zh.wikipedia.org/wiki/RSS)吧。 (CC-BY-SA 3.0)

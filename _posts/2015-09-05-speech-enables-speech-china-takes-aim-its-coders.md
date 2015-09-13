@@ -8,6 +8,8 @@ categories: 水表 转载 翻译
 
 我的翻译质量确实不咋地，但至少还算是能看吧。希望我的翻译水平能在以后得到提升。
 
+<!--more-->
+
 [program-think]: http://program-think.blogspot.com.au/?m=1
 [newest-post]: http://program-think.blogspot.com.au/2015/08/Technology-and-Freedom.html?m=1
 
