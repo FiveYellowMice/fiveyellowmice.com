@@ -1,7 +1,7 @@
 ---
 title: "翻译了 EFF 的 Speech that Enables Speech: China Takes Aim at Its Coders"
 date: 2015-09-05 00:49 +1000
-categories: 水表 翻译
+categories: 水表 转载 翻译
 ---
 
 [编程随想][program-think]的[最新一篇][newest-post]博文中提到了这篇文章，可惜是英语的，对于我国广大小白来说，就等于没有，那么我还是当下老好人，把它翻译一下。
