@@ -24,4 +24,4 @@ permalink: /projects/
 
 我计划要使用中文要写一“套”详细的、小白友好的使用 [FFmpeg](https://github.com/FiveYellowMice/how-to-convert-videos-with-ffmpeg-zh/blob/master/01-write-in-front.md#what-is-ffmpeg-why-use-it) 来进行 **日常** 视频转码的教程，目前正在 *活跃开发中* 。
 
-我已经完成了 [v0.1](https://github.com/FiveYellowMice/how-to-convert-videos-with-ffmpeg-zh/releases/tag/v0.1) 的发布，但是它并不是一个已经完全完成的版本，而不完全的部分将会在以后补上。详情查看[这篇博文](https://fiveyellowmice.github.io/posts/2015/09/2015-09-25-how-ffmpeg-convert-release-0-1.html)。
+我已经完成了 [v0.1](https://github.com/FiveYellowMice/how-to-convert-videos-with-ffmpeg-zh/releases/tag/v0.1) 的发布，但是它并不是一个已经完全完成的版本，而不完全的部分将会在以后补上。详情查看[这篇博文](https://fiveyellowmice.github.io/posts/2015/09/how-ffmpeg-convert-release-0-1.html)。
