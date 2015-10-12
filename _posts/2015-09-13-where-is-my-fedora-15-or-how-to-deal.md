@@ -1,7 +1,7 @@
 ---
 title: 我的 Fedora 15 去哪了？（或者说如何应对 Fedora 与课本之间的脱节）
 date: 2015-09-13 14:09 +1000
-categories: Linux 转载 翻译
+tags: Linux 转载 翻译
 headpic: yum-is-deprecated.png
 headpic_alt: "Fedora 23 提示 yum 已经被废弃"
 ---

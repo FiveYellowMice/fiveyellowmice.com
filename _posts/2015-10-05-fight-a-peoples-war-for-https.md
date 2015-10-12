@@ -1,7 +1,7 @@
 ---
 title: 为 HTTPS 打一场人民战争
 date: 2015-10-05 16:56 +1100
-categories: 安全 网络
+tags: 安全 网络
 headpic: peoples-war.jpg
 headpic_alt: 队长，敌人的 DDoS 太猛烈了。
 ---

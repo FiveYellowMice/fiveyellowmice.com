@@ -1,7 +1,7 @@
 ---
 title: "RSS 的使用方法"
 date: 2015-09-09 17:39 +1000
-categories: 软件 扫盲
+tags: 软件 扫盲
 headpic: akregator.png
 headpic_alt: "Akregator 界面截图"
 ---

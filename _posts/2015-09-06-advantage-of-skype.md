@@ -1,7 +1,7 @@
 ---
 title: "用 Skype 的好处"
 date: 2015-09-06 20:34 +1000
-categories: 个人 软件
+tags: 个人 软件
 cc_by_sa: false
 headpic: Skype_logo.png
 headpic_alt: "Skype logo"
