@@ -36,3 +36,8 @@ defaults:
       path: ""
     values:
       cc_by_sa: true
+  -
+    scope:
+      path: "tags"
+    values:
+      layout: tag
