@@ -2,6 +2,7 @@
 layout: page
 title: 友情链接
 permalink: /links/
+comments: true
 ---
 
 我创建这个页面之前，首先就想问的是：友情链接有个毛用啊？
