@@ -36,6 +36,7 @@ defaults:
       path: ""
     values:
       cc_by_sa: true
+      sitemap: true
   -
     scope:
       path: "tags"

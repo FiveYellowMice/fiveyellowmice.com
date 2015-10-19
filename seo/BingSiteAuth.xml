@@ -1,6 +1,7 @@
 ---
 layout: null
 permalink: /BingSiteAuth.xml
+sitemap: false
 ---
 <?xml version="1.0"?>
 <users>
