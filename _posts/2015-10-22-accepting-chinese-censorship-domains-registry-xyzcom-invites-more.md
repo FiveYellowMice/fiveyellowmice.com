@@ -33,6 +33,6 @@ xyz.com 对中国对其域名空间的审查的纵容，是一个让中国和其
 
 ----------------
 
-翻译自 EFF 的[这篇文章](https://www.eff.org/deeplinks/2015/10/accepting-chinese-censorship-domains-registry-xyzcom-invites-more)。
+翻译自 EFF 的[这篇文章](https://www.eff.org/deeplinks/2015/10/accepting-chinese-censorship-domains-registry-xyzcom-invites-more)，原文遵循 CC-BY 许可协议。
 
 本人翻译水平不佳，所以欢迎大家在评论中给出建议！
