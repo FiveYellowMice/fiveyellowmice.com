@@ -16,8 +16,12 @@ function showResults() {
 		}
 	}
 	var htmlOut = "";
-	for ( var i = 0; i < resultList.length; i++ ) {
-		htmlOut += resultToHtml(resultList[i]);
+	if ( resultList.length === 0 ) {
+		htmlOut = "<p>没有找到结果。</p>";
+	} else {
+		for ( var i = 0; i < resultList.length; i++ ) {
+			htmlOut += resultToHtml(resultList[i]);
+		}
 	}
 	document.getElementById("search-results").innerHTML = htmlOut;
 }
