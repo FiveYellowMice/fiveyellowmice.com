@@ -1,0 +1,15 @@
+---
+layout: page
+title: 搜索
+sitemap: false
+---
+
+<input type="text" id="search-keywords-box" onkeydown="javascript: keyDown(event)" autocomplete="off" autofocus="autofocus">
+<button type="submit" id="search-button" onclick="javascript: search()">搜索</button>
+
+<noscript>请启用 JavaScript 以使用搜索功能。</noscript>
+
+<ul class="post-list" id="search-results"></ul>
+
+<script src="search.js"></script>
+<script src="searchresult.js"></script>

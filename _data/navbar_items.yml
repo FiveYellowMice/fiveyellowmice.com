@@ -1,3 +1,5 @@
+- url: /search/
+  title: 搜索
 - url: /projects/
   title: 我开的坑
 - url: /links/
