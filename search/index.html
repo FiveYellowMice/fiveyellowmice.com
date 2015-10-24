@@ -1,0 +1,13 @@
+---
+layout: page
+title: 搜索
+---
+
+<p>这是一个站内搜索页面，在此处可以搜索到本博客中的所有博文。<noscript>但是要搜索的话，请启用 JavaScript 。</noscript></p>
+
+<p>搜索功能是全靠我自己写的，所以可能不是很给力或者有 bug ，目前只能搜索标题，没法搜索内容。当然， Pull request 我也是非常欢迎的，源码在<a href="https://github.com/FiveYellowMice/fiveyellowmice.github.io/tree/master/search">这里</a>。</p>
+
+<input type="text" id="search-keywords-box" onkeydown="javascript: keyDown(event)" autocomplete="off" autofocus="autofocus">
+<button type="submit" id="search-button" onclick="javascript: search()">搜索</button>
+
+<script src="search.js"></script>
