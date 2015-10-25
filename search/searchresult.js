@@ -9,10 +9,18 @@ function init() {
 }
 
 function showResults() {
+	var keywordsList = keywords.split(" ");
 	var resultList = [];
 	for ( var i = 0; i < data.length; i++ ) {
-		if ( casualize(data[i].title).search(casualize(keywords)) !== -1 ) {
- 			resultList.push(data[i]);
+		var pass = true;
+		for ( var t = 0; t < keywordsList.length; t++ ) {
+			if ( casualize(data[i].title).search(casualize(keywordsList[t])) === -1 ) {
+				pass = false;
+				break;
+			}
+		}
+		if (pass) {
+			resultList.push(data[i])
 		}
 	}
 	var htmlOut = "";
