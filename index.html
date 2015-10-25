@@ -6,6 +6,10 @@ layout: default
 	
 	<p class="page-description">{{ site.description }}</p>
 	
+	<script>
+		document.write("<p><a href=\"https://github.com/FiveYellowMice/fortune-web\">动态格言</a>：<br><span name=\"fortune\"></span></p>");
+	</script>
+	
 	<h1 class="page-heading">最新博文</h1>
 	
 	<ul class="post-list">
@@ -33,5 +37,8 @@ layout: default
 	{% endif %}
 	
 	<p class="rss-subscribe">通过 <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a> 关注我（<a href="{{ site.baseurl }}/posts/2015/09/usage-of-rss.html">怎么用？</a>）</p>
+	
+	<script src="fortunes.js"></script>
+	<script src="https://cdn.rawgit.com/FiveYellowMice/fortune-web/master/fortune-web.js"></script>
 	
 </div>
