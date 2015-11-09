@@ -27,6 +27,7 @@ defaults:
       path: ""
       type: "posts"
     values:
+      excerptable: true
       comments: true
       layout: post
   -
