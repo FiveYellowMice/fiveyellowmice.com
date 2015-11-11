@@ -1,8 +1,3 @@
----
-layout: null
-sitemap: false
----
-
 var fortunes = [
 	{
 		"content": "一个人的价值在于他贡献了什么，而不在于他获得了什么。",

@@ -2,6 +2,7 @@
 layout: page
 title: 我开的坑
 permalink: /projects/
+sitemap: true
 ---
 
 下面是几个我在业余时间里~~忙里偷闲~~所做出来的一些中二计划。

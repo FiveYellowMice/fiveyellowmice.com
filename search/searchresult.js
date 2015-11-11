@@ -1,6 +1,4 @@
 ---
-layout: null
-sitemap: false
 ---
 
 function init() {

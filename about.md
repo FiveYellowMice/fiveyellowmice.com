@@ -2,6 +2,7 @@
 layout: page
 title: 关于
 permalink: /about/
+sitemap: true
 ---
 
 欢迎来到 FiveYellowMice 的博客！因为我给了这个网站很高的期望，所以你可能会看到一些狂妄自大的话，这点还请见谅。

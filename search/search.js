@@ -1,8 +1,3 @@
----
-layout: null
-sitemap: false
----
-
 function search() {
 	keywords = document.getElementById("search-keywords-box").value;
 	if ( casualize(keywords).length === 0 ) {

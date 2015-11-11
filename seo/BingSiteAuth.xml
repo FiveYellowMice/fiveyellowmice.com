@@ -1,8 +1,7 @@
 ---
-layout: null
 permalink: /BingSiteAuth.xml
-sitemap: false
 ---
+
 <?xml version="1.0"?>
 <users>
 	<user>2FF28907B4768191D94E871E9679079C</user>

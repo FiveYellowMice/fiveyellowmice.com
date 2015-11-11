@@ -28,6 +28,7 @@ defaults:
       type: "posts"
     values:
       excerptable: true
+      sitemap: true
       comments: true
       layout: post
   -
@@ -35,7 +36,6 @@ defaults:
       path: ""
     values:
       cc_by_sa: true
-      sitemap: true
   -
     scope:
       path: "tags"
