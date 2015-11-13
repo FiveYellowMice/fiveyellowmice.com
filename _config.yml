@@ -5,6 +5,7 @@ description: >
   我是一位早就不该中二的中二少年，最近又开了一个脑洞，于是就开了这个博客。
 baseurl: ""
 url: "https://fiveyellowmice.github.io"
+timezone: UTC
 excerpt_separator: <!--more-->
 
 # Social settings
