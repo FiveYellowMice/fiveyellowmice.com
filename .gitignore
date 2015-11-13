@@ -1,7 +1,6 @@
 # Jekyll
 _site/
 .sass-cache/
-Gemfile
 Gemfile.lock
 
 # Editor cache
