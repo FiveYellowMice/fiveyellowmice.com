@@ -8,7 +8,27 @@ sitemap: true
 	<p class="page-description">{{ site.description }}</p>
 	
 	<script>
-		document.write("<p><a href=\"https://github.com/FiveYellowMice/fortune-web\">动态格言</a>：<br><span name=\"fortune\"></span></p>");
+		document.write("<p id=\"fortune\"></p>");
+		httpGet( "https://api.github.com/gists/c0581783983b05ca28f7", function(data) {
+			fortunes = JSON.parse(JSON.parse(data).files["fortunes.json"].content);
+			randomFortune = fortunes[ Math.floor( Math.random() * fortunes.length ) ];
+			if ( randomFortune.author === undefined ) {
+				document.getElementById("fortune").innerHTML = "<p><a href=\"https://gist.github.com/FiveYellowMice/c0581783983b05ca28f7\">动态格言</a>：<br>" + randomFortune.content + "</p>";
+			} else {
+				document.getElementById("fortune").innerHTML = "<p><a href=\"https://gist.github.com/FiveYellowMice/c0581783983b05ca28f7\">动态格言</a>：<br>" + randomFortune.content + "<br>--" + randomFortune.author + "</p>";
+			}
+		});
+		
+		function httpGet(url, callBack) {
+			var request = new XMLHttpRequest();
+			request.onreadystatechange = function() {
+				if ( request.readyState === 4 && request.status === 200 ) {
+					callBack(request.responseText);
+				}
+			}
+			request.open( "GET", url, true );
+			request.send();
+		}
 	</script>
 	
 	<h1 class="page-heading">最新博文</h1>
@@ -38,8 +58,5 @@ sitemap: true
 	{% endif %}
 	
 	<p class="rss-subscribe">通过 <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a> 关注我（<a href="{{ site.baseurl }}/posts/2015/09/usage-of-rss.html">怎么用？</a>）</p>
-	
-	<script src="fortunes.js"></script>
-	<script src="https://cdn.rawgit.com/FiveYellowMice/fortune-web/master/fortune-web.js"></script>
 	
 </div>
