@@ -1,7 +1,7 @@
 ---
 title: 同意了中国对域名的审查之后，域名注册商 xyz.com 还想要更多
 date: 2015-10-22 20:28 +1100
-tags: 水表 网络 翻译 转载
+tags: 水表 网络 翻译
 headpic: icann-1.png
 headpic_alt: "I cann't even"
 ---
