@@ -41,7 +41,7 @@ sitemap: true
 在这个博客中经常有使用的别人的作品有：<a id="show-more"></a>
 
 样式、布局： [Jekyll](http://jekyllrb.com/), MIT License, Copyright &copy; 2008-2015 Tom Preston-Werner<br>
-底下的 G+ 按钮： Google+, Proporietary, Copyright &copy 2015 Google Inc.  
+底下的 G+ 按钮： Google+, Proporietary, Copyright &copy; 2015 Google Inc.  
 底下的哔哩哔哩按钮：我找了半天都没有找到他们的商标使用政策……:unamused:  
 Emoji ： [Noto Emoji](https://github.com/googlei18n/noto-emoji), Apache License, Copyright &copy; 2015 Google Inc.  
 以上人或组织没有特别授权我对这些东西的使用。
