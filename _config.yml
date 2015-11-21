@@ -21,6 +21,12 @@ exclude: [Gemfile, Gemfile.lock]
 enforce_ssl: fiveyellowmice.github.io
 permalink: /posts/:year/:month/:title.html
 
+# Plugins
+gems:
+  - jemoji
+emoji:
+  src: "/images"
+
 # Defaults
 defaults:
   -
