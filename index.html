@@ -1,5 +1,6 @@
 ---
 layout: default
+jquery: true
 sitemap: true
 ---
 
@@ -9,26 +10,20 @@ sitemap: true
 	
 	<script>
 		document.write("<p id=\"fortune\"></p>");
-		httpGet( "https://api.github.com/gists/c0581783983b05ca28f7", function(data) {
-			fortunes = JSON.parse(JSON.parse(data).files["fortunes.json"].content);
+		$("#fortune").hide();
+		
+		$.getJSON( "https://api.github.com/gists/c0581783983b05ca28f7", function(data) {
+			
+			fortunes = JSON.parse(data.files["fortunes.json"].content);
 			randomFortune = fortunes[ Math.floor( Math.random() * fortunes.length ) ];
 			if ( randomFortune.author === undefined ) {
-				document.getElementById("fortune").innerHTML = "<p><a href=\"https://gist.github.com/FiveYellowMice/c0581783983b05ca28f7\">动态格言</a>：<br>" + randomFortune.content + "</p>";
+				$("#fortune").html( "<a href=\"https://gist.github.com/FiveYellowMice/c0581783983b05ca28f7\">动态格言</a>：<br>" + randomFortune.content );
 			} else {
-				document.getElementById("fortune").innerHTML = "<p><a href=\"https://gist.github.com/FiveYellowMice/c0581783983b05ca28f7\">动态格言</a>：<br>" + randomFortune.content + "<br>--" + randomFortune.author + "</p>";
+				$("#fortune").html( "<a href=\"https://gist.github.com/FiveYellowMice/c0581783983b05ca28f7\">动态格言</a>：<br>" + randomFortune.content + "<br>--" + randomFortune.author );
 			}
+			
+			$("#fortune").slideDown("100");
 		});
-		
-		function httpGet(url, callBack) {
-			var request = new XMLHttpRequest();
-			request.onreadystatechange = function() {
-				if ( request.readyState === 4 && request.status === 200 ) {
-					callBack(request.responseText);
-				}
-			}
-			request.open( "GET", url, true );
-			request.send();
-		}
 	</script>
 	
 	<h1 class="page-heading">最新博文</h1>
