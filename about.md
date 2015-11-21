@@ -2,6 +2,7 @@
 layout: page
 title: 关于
 permalink: /about/
+jquery: true
 sitemap: true
 ---
 
@@ -36,6 +37,27 @@ sitemap: true
 不过并不是博客上所有的内容都采用 CC-BY-SA 4.0 协议，有例外的话，我会在明显的位置作出说明。
 
 我的博客中也包含许多别人的作品，这些作品当然也大都是自由协议的。不过不管怎么样我都会尽量的尊重原作者的版权，标上说明，如果你发现哪个地方侵犯了你的版权的话，比起打官司我更希望先给我一次悔改的机会，发邮件让我更改。
+
+在这个博客中经常有使用的别人的作品有：<a id="show-more"></a>
+
+样式、布局： [Jekyll](http://jekyllrb.com/), MIT License, Copyright &copy; 2008-2015 Tom Preston-Werner<br>
+底下的 G+ 按钮： Google+, Proporietary, Copyright &copy 2015 Google Inc.  
+底下的哔哩哔哩按钮：我找了半天都没有找到他们的商标使用政策……  
+Emoji ： [Noto Emoji](https://github.com/googlei18n/noto-emoji), Apache License, Copyright &copy; 2015 Google Inc.  
+以上人或组织没有特别授权我对这些东西的使用。
+
+<script>
+	var more = $("#show-more");
+	var work = $("p:contains(Copyright)");
+	
+	more.html("点击展开 &darr;").css("cursor", "pointer");
+	work.hide();
+	
+	more.click(function(event) {
+		more.hide();
+		work.slideDown(500);
+	});
+</script>
 
 ## 隐私
 
