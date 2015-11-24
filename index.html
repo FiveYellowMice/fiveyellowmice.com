@@ -42,9 +42,9 @@ sitemap: true
 				{% endif %}
 				
 				<p class="post-excerpt">{{ post.excerpt | strip_html }} <a href="{{ post.url | prepend: site.baseurl }}">继续阅读 &gt;&gt;</a></p>
+				
+				<hr>
 			</li>
-			
-			<hr>
 		{% endfor %}
 	</ul>
 	
