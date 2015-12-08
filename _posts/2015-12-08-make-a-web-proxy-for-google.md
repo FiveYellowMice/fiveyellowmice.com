@@ -30,7 +30,7 @@ headpic_alt: 使用 Curly Turtle 搜索水表新闻
 
 一个反向代理只能代理一个网站的内容。而许多网站都需要在网页中加载外部资源（比如图片、样式），这些资源有些经常不是来自网页所属于的那个域名的，要访问资源必须访问另一个域名，而那样的域名通常也是被封的。再搭一个反向代理？不行，因为网页的 HTML 中就写着它需要那个域名里的资源，浏览器不知道你在用反向代理，不会把它的链接转向你的另一个反向代理。
 
-更蛋疼的是链接。会 HTML 的人都知道，链接有两种：相对链接和绝对链接，相对链接会链接到相对于当前网页的一个地方，比如在这个页面 `https://fiveyellowmice.github.io/posts/2015/12/make-a-web-proxy-for-google.html` 中，一条内容为 `a` 的链接会将你链接到 `https://fiveyellowmice.github.io/posts/2015/12/a` 中去。而绝对链接以 `/` 开头，代表这个域名的根目录，在这里就是 `https://fiveyellowmice.github.io/` ，一条内容为 `/a` 的链接会无视当前页面的路径，直接将你定向到这个域名的根目录中的 `https://fiveyellowmice.github.io/a` 上去。
+更蛋疼的是链接。会 HTML 的人都知道，链接有两种：相对链接和绝对链接，相对链接会链接到相对于当前网页的一个地方，比如在 `https://example.com/posts/` 中，一条内容为 `a` 的链接会将你链接到 `https://example.com/posts/a` 中去。而绝对链接以 `/` 开头，代表这个域名的根目录，在这个例子中就是 `https://example.com/` ，一条内容为 `/a` 的链接会无视当前页面的路径，直接将你定向到这个域名的根目录中的 `https://example.com/a` 上去。
 
 如果你将你的反向代理挂在 `https://example.com/reverse-proxy/` 里面，将 `https://example.com/` 中的其他路径做别的用途。反向代理指向 `https://test.org/` ，你得到的 HTML 中有一个链接 `/a` 。在原来的地址 `https://test.org/` 中它会指向 `https://test.org/a` ，这是正确的。可是如果你通过反向代理 `https://example.com/reverse-proxy/` 访问的话，链接就会指向 `https://example.com/a` ，这可不对，跑到我不用来做反向代理的地方去了，它应该指向 `https://example.com/reverse-proxy/a` 才对的。可是这有什么办法呢？让服务器替换 HTML 中的内容吗？但 HTML 很复杂，里面还会有 JavaScript 什么的就更复杂了，一个个替换起来是件很复杂的事情。
 
@@ -58,7 +58,7 @@ headpic_alt: 使用 Curly Turtle 搜索水表新闻
 
 类似谷粉搜搜这样的网站有好几个，不过只要维护者在墙内的，现在几乎都已经被有关部门打压完了。由此可见，做一个镜像站不是长久之计，甚至还有可能面临被查水表的危险。所以干脆就做成像 Shadowsocks 这样的，自己在 VPS 上搭，自己使用。
 
-为了不让别人知道我的服务器上有一个可以提供免翻墙 Google 搜索的服务在运行，把东西放在根目录是肯定不行的。我只能让 Curly Turtle 对知道我设定的子目录的人作出回应，否则就返回 404 。为了安全最好还把这个子目录设的长一点，比如如果把代理放在 `https://example.com/OUvKeMvBxRbYg02H` 里，让别人发现就很难了。
+为了不让别人知道我的服务器上有一个可以提供免翻墙 Google 搜索的服务在运行，把东西放在根目录是肯定不行的。我只能让 Curly Turtle 对知道我设定的子目录的人作出回应，否则就返回 404 。为了安全最好还把这个子目录设的长一点，比如如果把代理放在 `https://example.com/OUv-KeMvBxRbYg02H` 里，让别人发现就很难了。
 
 如果你觉得你想要用 Curly Turtle 搭一个公共的网页代理，那当然是极好的。但是请原谅我打击你的积极性，如果你在中国大陆，为了你 VPS 能使用得更长久一些，为了你的人身安全，别这么做。当然你要是最后真分享出来了还流传很广还没被查水表，把我的脸打的啪啪响，那我也心甘情愿被打啊。
 
