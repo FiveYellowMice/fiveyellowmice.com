@@ -12,7 +12,7 @@ headpic_alt: 使用 Curly Turtle 搜索水表新闻
 
 ## 翻墙软件的麻烦
 
-我有上 Google 的需求，但是这个需求要怎样才能满足呢？当然是翻墙了。有自由门、赛风、无界这种[开发者比较敏感](https://zh.wikipedia.org/wiki/%E6%B3%95%E8%BD%AE%E5%8A%9F)而且正邪未知的翻墙软件 / 服务，也有[赛风](https://psiphon.ca/)、 [Tor](https://www.torproject.org/) 、 [XX-Net](https://github.com/XX-net/XX-Net) 这种自由而且开源的翻墙软件 / 服务，当然也少不了备受好评、自由开源，但是需要自己架设服务器的 [Shadowsocks](https://github.com/Long-live-shadowsocks/shadowsocks) 。
+我有上 Google 的需求，但是这个需求要怎样才能满足呢？当然是翻墙了。有自由门、无界这种[开发者比较敏感](https://zh.wikipedia.org/wiki/%E6%B3%95%E8%BD%AE%E5%8A%9F)而且正邪未知的翻墙软件 / 服务，也有[赛风](https://psiphon.ca/)、 [Tor](https://www.torproject.org/) 、 [XX-Net](https://github.com/XX-net/XX-Net) 这种自由而且开源的翻墙软件 / 服务，当然也少不了备受好评、自由开源，但是需要自己架设服务器的 [Shadowsocks](https://github.com/Long-live-shadowsocks/shadowsocks) 。
 
 我是比较偏向中间三种以及最后一个的，不过它们都有一个很大的缺点，那就是它们都需要你在需要翻墙的设备上装一个客户端。这情有可原，因为能存活至今的翻墙软件必须都得用特殊的网络连接方式，不像 VPN 一样许多操作系统都内置支持，而 [VPN 早已不能被用来翻墙](http://chinadigitaltimes.net/chinese/2015/01/%E5%A5%87%E5%AE%A2%E8%B5%84%E8%AE%AF%EF%BD%9C%E4%B8%AD%E5%9B%BD%E5%9C%A8%E5%8D%8F%E8%AE%AE%E5%B1%82%E9%9D%A2%E4%B8%8A%E5%B1%8F%E8%94%BD%E5%A4%96%E5%9B%BDvpn%E6%9C%8D%E5%8A%A1/)。
 
