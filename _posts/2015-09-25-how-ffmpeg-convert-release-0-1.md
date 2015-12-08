@@ -1,6 +1,6 @@
 ---
 title: 《如何使用 FFmpeg 进行视频转码》 v0.1 发布！
-date: 2015-09-25 22:05 +1000
+date: 2015-09-25 12:05
 tags: FFmpeg 更新
 headpic: gplus-posts-ffmpeg.png
 headpic_alt: Google+ 上全是我的帖子

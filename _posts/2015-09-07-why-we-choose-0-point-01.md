@@ -1,6 +1,6 @@
 ---
 title: "为什么我们要选择这 0.01 的生活"
-date: 2015-09-07 13:52 +1000
+date: 2015-09-07 03:52
 tags: 转载 Linux
 cc_by_sa: false
 headpic: i-am-the-1-percent-tshirt-front-hr.jpg

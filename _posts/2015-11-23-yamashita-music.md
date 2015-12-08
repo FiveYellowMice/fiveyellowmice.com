@@ -1,6 +1,6 @@
 ---
 title: 山下智博的音乐
-date: 2015-11-23 14:05 +1100
+date: 2015-11-23 03:05
 tags: 个人 ACG
 headpic: add-340cc-water.jpg
 headpic_alt: 加入大概 340 cc 的水
