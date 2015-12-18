@@ -48,7 +48,7 @@ function resultToHtml(item) {
 	if ( item.tags.length === 0 ) {
 		tags = "";
 	} else {
-		tags = "&nbsp;&nbsp;&nbsp;<img src=\"{{ site.baseurl }}/images/tags.svg\" alt=\"标签：\">&nbsp;";
+		tags = "&nbsp;&nbsp;&nbsp;<img class=\"tag-icon\" src=\"{{ site.baseurl }}/images/tags.svg\" alt=\"标签：\">&nbsp;";
 		for ( var i = 0; i < item.tags.length; i++ ) {
 			tags += "<a href=\"{{ site.baseurl }}/tags/" + item.tags[i] + ".html\">" + item.tags[i] + "</a>";
 			if ( i !== item.tags.length - 1 ) {
@@ -57,7 +57,7 @@ function resultToHtml(item) {
 		}
 	}
 	var meta = "<span class=\"post-meta\">" + item.date + tags + "</span>";
-	var title = "<h2><a class=\"post-link\" href=\"" + item.url + "\">" + item.title + "</a></h2>";
+	var title = "<h2 class=\"post-link\"><a href=\"" + item.url + "\">" + item.title + "</a></h2>";
 	return "<li>" + meta + title + "</li>";
 }
 
