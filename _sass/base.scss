@@ -1,0 +1,50 @@
+// Reset
+html, body,
+p, a, div, img,
+h1, h2, h3, h4, h5, h6,
+ul, ol, li {
+	margin: 0;
+	padding: 0;
+	border: none;
+	
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+// Font
+p {
+	
+}
+
+// Links
+a {
+	&:link {
+		text-decoration: none;
+		color: #2962FF;
+	}
+	
+	&:visited {
+		color: #303F9F;
+	}
+	
+	&:hover {
+		text-decoration: underline;
+	}
+	
+	&:active {
+		color: #F9A825;
+	}
+}
+
+// Images
+img {
+	max-width: 100%;
+}
+
+// Wrapper
+.wrapper {
+	max-width: 800px;
+	margin: auto;
+	padding: 0 10px 0 10px;
+}

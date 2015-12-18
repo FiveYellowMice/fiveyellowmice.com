@@ -1,0 +1,78 @@
+// Header
+header .site-header {
+	position: fixed;
+	width: 100%;
+	height: $header-height;
+	
+	display: flex;
+	align-items: center;
+	
+	box-shadow: 0 -20px 20px 20px #000000;
+	background: $hangouts-green;
+	
+	a {
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+	
+	.site-title, .site-nav {
+		display: inline-block;
+		font-size: 20px;
+	}
+	
+	.site-title {
+		margin-left: 20px;
+	}
+	
+	.site-nav {
+		float: right;
+		margin-left: auto;
+		margin-right: 20px;
+		
+		.trigger .page-link {
+			margin-left: 5px;
+			padding-left: 4px;
+			padding-right: 4px;
+			border-radius: 4px;
+			
+			transition: background 0.2s ease-out;
+			
+			&:hover {
+				background: rgba(0, 0, 0, 0.25);
+			}
+			
+			&:active {
+				background: rgba(0, 0, 0, 0.50);
+				transition: initial;
+			}
+		}
+	}
+}
+
+// Page content
+.page-content {
+	background: #EEEEEE;
+	
+	.header-reserved {
+		height: $header-height + 20px;
+	}
+	
+	.wrapper {
+		background: white;
+		box-shadow: $light-shadow;
+	}
+}
+
+// Post list
+ul.post-list {
+	list-style-type: none;
+	
+	li {
+		padding: 10px 0 10px 0;
+		border-bottom: 1px solid #CCCCCC;
+		
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+}
