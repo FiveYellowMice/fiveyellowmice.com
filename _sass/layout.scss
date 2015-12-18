@@ -53,19 +53,19 @@ header .site-header {
 .page-content {
 	background: #EEEEEE;
 	
-	.header-reserved {
-		height: $header-height + 20px;
-	}
-	
 	.wrapper {
 		background: white;
 		box-shadow: $light-shadow;
+		
+		padding-top: $header-height + 20px;
+		padding-bottom: 10px;
 	}
 }
 
 // Post list
 ul.post-list {
 	list-style-type: none;
+	margin: 0;
 	
 	li {
 		padding: 10px 0 10px 0;
@@ -75,4 +75,30 @@ ul.post-list {
 			border-bottom: none;
 		}
 	}
+}
+
+.post-link {
+	margin: 0;
+	border: none;
+	
+	a {
+		font-size: 30px;
+	}
+}
+
+// Posts
+.post-header {
+	margin-bottom: 20px;
+}
+
+.post-title {
+	font-size: 40px;
+}	
+
+.post-meta {
+	color: #828282;
+}
+
+.page-heading {
+	font-size: 30px;
 }

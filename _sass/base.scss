@@ -12,9 +12,33 @@ ul, ol, li {
 	font-weight: normal;
 }
 
-// Font
+// Paragraphs
 p {
-	
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+// Headers
+h2 {
+	font-size: 30px;
+	margin-top: 20px;
+	border-bottom: 1px solid gray;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 26px;
+}
+
+h5 {
+	font-size: 24px;
+}
+
+h6 {
+	font-size: 22px;
 }
 
 // Links
@@ -40,6 +64,37 @@ a {
 // Images
 img {
 	max-width: 100%;
+}
+
+// Code
+code, pre {
+	font-family: monospace;
+	font-size: 14px;
+	padding: 2px;
+	
+	border: 1px solid gray;
+	border-radius: 3px;
+	background: #F0F0F0;
+	
+	cursor: text;
+}
+
+pre code {
+	padding: 0;
+	border: none;
+	background: transparent;
+}
+
+// Quote
+blockquote {
+	margin: 10px 0 10px $indent;
+	padding-left: 5px;
+	border-left: 3px solid #999999;
+}
+
+// List
+ul, ol {
+	margin: 10px 0 10px $indent;
 }
 
 // Wrapper
