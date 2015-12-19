@@ -12,6 +12,11 @@ ul, ol, li {
 	font-weight: normal;
 }
 
+// Background
+body {
+	background: #EEEEEE;
+}
+
 // Paragraphs
 p {
 	margin-top: 10px;
@@ -95,11 +100,4 @@ blockquote {
 // List
 ul, ol {
 	margin: 10px 0 10px $indent;
-}
-
-// Wrapper
-.wrapper {
-	max-width: 800px;
-	margin: auto;
-	padding: 0 10px 0 10px;
 }

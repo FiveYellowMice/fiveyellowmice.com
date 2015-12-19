@@ -49,16 +49,29 @@ header .site-header {
 	}
 }
 
-// Page content
-.page-content {
-	background: #EEEEEE;
+// Footer
+.social-icon {
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+}
+
+// Wrapper
+.wrapper {
+	max-width: 800px;
+	margin: auto;
+}
+
+// Card
+.card {
+	background: white;
+	box-shadow: $light-shadow;
 	
-	.wrapper {
-		background: white;
-		box-shadow: $light-shadow;
-		
+	padding: 10px;
+	margin-bottom: 10px;
+	
+	&:first-child {
 		padding-top: $header-height + 20px;
-		padding-bottom: 10px;
 	}
 }
 

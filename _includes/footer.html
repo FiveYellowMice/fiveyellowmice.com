@@ -5,23 +5,21 @@
 		<h2 class="footer-heading">{{ site.title }}</h2>
 		
 		<div class="footer-col-wrapper">
-			<div class="footer-col  footer-col-1">
+			<div class="footer-col card">
 				<ul class="contact-list">
 					<li>{{ site.title }}</li>
 					<li><a href="mailto:{{ site.email }}">{{ site.email }}</a> [<a href="{{ site.baseurl }}/pubkey.gpg">GPG</a>]</li>
 				</ul>
 			</div>
 			
-			<div class="footer-col  footer-col-2">
+			<div class="footer-col card">
 				<ul class="social-media-list">
 					{% if site.github_username %}
 					<li>
 						<a href="https://github.com/{{ site.github_username }}" target="_blank">
-							<span class="icon  icon--github">
-								<svg viewBox="0 0 16 16">
-									<path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
-								</svg>
-							</span>
+							<svg class="social-icon">
+								<path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+							</svg>
 							
 							<span class="username">八爪猫</span>
 						</a>
@@ -31,11 +29,9 @@
 					{% if site.googleplus_id %}
 					<li>
 						<a href="https://plus.google.com/u/0/{{ site.googleplus_id }}?prsrc=3" rel="publisher" target="_blank" style="text-decoration:none;">
-							<span class="icon  icon--googleplus">
-								<img src="https://ssl.gstatic.com/images/icons/gplus-16.png" alt="Google+" style="border:0;width:16px;height:16px;"/>
-							</span>
+							<img class="social-icon" src="https://ssl.gstatic.com/images/icons/gplus-16.png" alt="Google+" style="border:0;width:16px;height:16px;"/>
 							
-							<span class="username">咕狗+</span>
+							<span class="username">咕狗&#43;</span>
 						</a>
 					</li>
 					{% endif %}
@@ -43,18 +39,16 @@
 					{% if site.bilibili_id %}
 					<li>
 						<a href="http://space.bilibili.com/{{ site.bilibili_id }}" target="_blank">
-							<span class="icon  icon--bilibili">
-								<img src="{{ site.baseurl }}/images/bilibili_favicon.ico" alt="Bilibili" style="border:0;width:16px;height:16px;"/>
-							</span>
+							<img class="social-icon" src="{{ site.baseurl }}/images/bilibili_favicon.ico" alt="Bilibili" style="border:0;width:16px;height:16px;"/>
 							
-							<span>同性交友</span>
+							<span class="username">同性交友</span>
 						</a>
 					</li>
 					{% endif %}
 				</ul>
 			</div>
 			
-			<div class="footer-col  footer-col-3">
+			<div class="footer-col card">
 				{% if page.cc_by_sa %}
 				<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />除特殊说明外，本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。</p>
 				{% else %}
