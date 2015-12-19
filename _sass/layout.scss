@@ -49,29 +49,61 @@ header .site-header {
 	}
 }
 
+// Page content
+.page-content {
+	padding-top: $header-height + 20px;
+}
+
 // Footer
-.social-icon {
-	vertical-align: middle;
-	width: 16px;
-	height: 16px;
-}
-
-// Wrapper
-.wrapper {
-	max-width: 800px;
-	margin: auto;
-}
-
-// Card
-.card {
-	background: white;
+.site-footer {
+	width: 100%;
+	height: $footer-height;
 	box-shadow: $light-shadow;
+	background: transparent;
+	transition: background 1s ease-out;
 	
-	padding: 10px;
-	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
 	
-	&:first-child {
-		padding-top: $header-height + 20px;
+	&:hover {
+		background: white;
+	}
+	
+	* {
+		display: inline-block;
+		margin: 0;
+	}
+	
+	.footer-heading {
+		border: none;
+		font-size: 20px;
+		
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	.social-buttons {
+		margin-left: 10px;
+		
+		.social-icon {
+			vertical-align: middle;
+			width: 16px;
+			height: 16px;
+		}
+		
+		.username {
+			display: none;
+		}
+	}
+	
+	.license {
+		float: right;
+		margin-left: auto;
+		margin-right: 10px;
+	}
+	
+	img {
+		vertical-align: middle;
 	}
 }
 
@@ -106,7 +138,7 @@ ul.post-list {
 
 .post-title {
 	font-size: 40px;
-}	
+}
 
 .post-meta {
 	color: #828282;

@@ -101,3 +101,18 @@ blockquote {
 ul, ol {
 	margin: 10px 0 10px $indent;
 }
+
+// Wrapper
+.wrapper {
+	max-width: 800px;
+	margin: auto;
+}
+
+// Card
+.card {
+	background: white;
+	box-shadow: $light-shadow;
+	
+	padding: 10px;
+	margin-bottom: 10px;
+}
