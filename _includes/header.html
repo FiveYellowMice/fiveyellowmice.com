@@ -7,12 +7,25 @@
     <nav class="site-nav">
 
       <div class="trigger">
-        {% for page in site.data.navbar_items %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
+      
+        <a class="menu-button">
+          <svg viewBox="0 0 16 16">
+              <circle cx="8px" cy="2px" r="2px" fill="white" />
+              <circle cx="8px" cy="8px" r="2px" fill="white" />
+              <circle cx="8px" cy="14px" r="2px" fill="white" />
+          </svg>
+        </a>
+        
+        <div class="nav-items">
+          {% for page in site.data.navbar_items %}
+            {% if page.title %}
+            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      
       </div>
+      
     </nav>
 
   </div>

@@ -29,7 +29,11 @@ header .site-header {
 		margin-left: auto;
 		margin-right: 20px;
 		
-		.trigger .page-link {
+		.menu-button {
+			display: none;
+		}
+		
+		.page-link {
 			margin-left: 5px;
 			padding-left: 4px;
 			padding-right: 4px;
@@ -44,6 +48,58 @@ header .site-header {
 			&:active {
 				background: rgba(0, 0, 0, 0.50);
 				transition: initial;
+			}
+		}
+		
+		@media (max-width: 600px) {
+			.menu-button {
+				display: block;
+				width: 16px;
+				height: 16px;
+				margin-left: auto;
+				margin-right: 0;
+				
+				padding: 10px;
+				border-radius: 100%;
+				
+				transition: background 0.2s ease-out;
+				
+				&:active {
+					background: rgba(0, 0, 0, 0.50);
+				}
+			}
+			
+			.nav-items {
+				display: none;
+				
+				background: white;
+				box-shadow: $light-shadow;
+				
+				min-width: 112px;
+				padding-top: 8px;
+				padding-bottom: 8px;
+				
+				.page-link {
+					display: block;
+					margin: 0;
+					padding-left: 16px;
+					padding-top: 12px;
+					padding-bottom: 16px;
+					
+					color: black;
+					border-radius: 0;
+				}
+			}
+			
+			.trigger {
+				display: block;
+				position: absolute;
+				top: $header-height / 2 - 18px;
+				right: 10px;
+				
+				&:hover .nav-items {
+					display: block;
+				}
 			}
 		}
 	}
@@ -104,6 +160,12 @@ header .site-header {
 	
 	img {
 		vertical-align: middle;
+	}
+	
+	@media (max-width: 600px) {
+		.contact-email, .social-buttons {
+			display: none;
+		}
 	}
 }
 
