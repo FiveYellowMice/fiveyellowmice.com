@@ -2,7 +2,6 @@
 layout: page
 title: 关于
 permalink: /about/
-jquery: true
 sitemap: true
 ---
 
