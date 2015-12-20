@@ -162,9 +162,15 @@ header .site-header {
 		vertical-align: middle;
 	}
 	
-	@media (max-width: 600px) {
+	@media (max-width: 640px) {
 		.contact-email, .social-buttons {
 			display: none;
+		}
+		
+		@media (max-width: 320px) {
+			.footer-heading {
+				display: none;
+			}
 		}
 	}
 }
