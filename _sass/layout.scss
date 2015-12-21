@@ -39,7 +39,7 @@ header .site-header {
 			padding-right: 4px;
 			border-radius: 4px;
 			
-			transition: background 0.2s ease-out;
+			@include transition(background 0.2s ease-out);
 			
 			&:hover {
 				background: rgba(0, 0, 0, 0.25);
@@ -47,7 +47,7 @@ header .site-header {
 			
 			&:active {
 				background: rgba(0, 0, 0, 0.50);
-				transition: initial;
+				@include transition(initial);
 			}
 		}
 		
@@ -62,7 +62,7 @@ header .site-header {
 				padding: 10px;
 				border-radius: 100%;
 				
-				transition: background 0.2s ease-out;
+				@include transition(background 0.2s ease-out);
 				
 				&:active {
 					background: rgba(0, 0, 0, 0.50);

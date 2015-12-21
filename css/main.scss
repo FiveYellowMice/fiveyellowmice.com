@@ -7,5 +7,12 @@ $indent: 40px;
 $hangouts-green: #1BA261;
 $light-shadow: 0 0 5px 0 rgba(0, 0 ,0 , 0.75);
 
+@mixin transition($transition) {
+	transition: $transition;
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-o-transition: $transition;
+}
+
 @import "base";
 @import "layout";
