@@ -54,6 +54,13 @@ header .site-header {
 		}
 		
 		@media (max-width: 600px) {
+			.menu-wrapper {
+				display: block;
+				position: absolute;
+				top: $header-height / 2 - 18px;
+				right: 10px;
+			}
+			
 			.menu-button {
 				display: block;
 				width: 16px;
@@ -93,15 +100,8 @@ header .site-header {
 				}
 			}
 			
-			.trigger {
+			.trigger:hover .nav-items {
 				display: block;
-				position: absolute;
-				top: $header-height / 2 - 18px;
-				right: 10px;
-				
-				&:hover .nav-items {
-					display: block;
-				}
 			}
 		}
 	}
