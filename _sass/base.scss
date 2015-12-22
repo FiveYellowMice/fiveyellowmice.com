@@ -118,3 +118,11 @@ ul, ol {
 	padding: 10px;
 	margin-bottom: 10px;
 }
+
+// Anchor
+:target:before {
+	content: "";
+	display: block;
+	height: $header-height;
+	margin: -$header-height 0 0;
+}
