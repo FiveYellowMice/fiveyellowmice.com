@@ -59,6 +59,15 @@
           "background-size": "cover"
         });
       }
+      
+      // Hide float buttons when see footer
+      $(window).scroll(_.throttle(function() {
+        if ( $(window).scrollTop() + $(window).height() > $(document).height() - $(".site-footer").height() ) {
+          $("#float-button-container").fadeOut(500);
+        } else if ( $("#float-button-container").css("display") === "none" ) {
+          $("#float-button-container").fadeIn(500);
+        }
+      }, 1000));
     </script>
 
     {% include footer.html %}
