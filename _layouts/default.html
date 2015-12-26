@@ -29,7 +29,7 @@
           .click(function() {
             
             // Select a random image
-            var candidates = ["Autumn", "BytheWater", "ColdRipple", "ColorfulCups", "DarkestHour", "EveningGlow", "FallenLeaf", "FlyingKonqui", "Grey", "Kite", "OneStandsOut", "PastelHills", "Path", "summer_1am"];
+            var candidates = ["Autumn", "BytheWater", "ColdRipple", "ColorfulCups", "DarkestHour", "EveningGlow", "FallenLeaf", "Grey", "Kite", "OneStandsOut", "PastelHills", "Path", "summer_1am"];
             var randomNumber = Math.floor(Math.random() * candidates.length);
             var imageUrl = "url(\"https://cdn.rawgit.com/KDE/plasma-workspace-wallpapers/master/" + candidates[randomNumber] +"/contents/images/1920x1080.jpg\")";
             setBackgroundImage(imageUrl);
