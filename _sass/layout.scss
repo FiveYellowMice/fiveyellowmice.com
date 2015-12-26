@@ -189,6 +189,41 @@ header .site-header {
 	}
 }
 
+// FLoat buttons
+#float-button-container {
+	display: none;
+	position: fixed;
+	bottom: 32px;
+	right: 32px;
+}
+
+.float-button {
+	width: 56px;
+	height: 56px;
+	border: none;
+	border-radius: 100%;
+	
+	cursor: pointer;
+	
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	text-align: center;
+	vertical-align: center;
+	
+	box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.25);
+	@include transition(box-shadow 0.2s ease-out);
+	
+	&:hover {
+		box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.5);
+	}
+	
+	svg {
+		margin: auto;
+	}
+}
+
 // Post list
 ul.post-list {
 	list-style-type: none;
