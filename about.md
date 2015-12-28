@@ -65,3 +65,5 @@ Emoji ： [Noto Emoji](https://github.com/googlei18n/noto-emoji), Apache License
 因为这个网站的服务器是 GitHub 的，我没有对服务器的访问权限也没法查看日志，所以我想收集数据也做不到啊。我能看到访问量什么的全是靠着 [Google Analytics](https://www.google.com/analytics/) ，这货只收集匿名数据，比如今天有几个人访问了我的网站啊、几个人是什么浏览器的啊、几个人来自哪个国家啊——没法精确到个人，所以你大可放心，详细的看 [Google 的隐私政策](https://www.google.com/intl/zh-CN/policies/)。实在不行你可以用 [Tor](https://www.torproject.org/) ，我没意见。
 
 评论系统是 [Disqus](https://disqus.com/) 的，也不是我自己的，我能看到的信息不比任何一个能看到网页的人多，所以我也没法收集你的数据。不过至于 Disqus ，你得看[他们的隐私政策](https://help.disqus.com/customer/portal/articles/466259-privacy-policy)。
+
+网站会在你的浏览器里保存 Cookie ，不过些 Cookie 都不是我设的，而是 GitHub / Microsoft / Creative Commons / CloudFlare / Google / Disqus 等等服务设的，我管不着。除此之外我会在你的浏览器里保存 Local Storage 和 Session Storage ，以此来提升网页体验，但这些数据将仅在客户端保存和使用，不会被上传（除非你故意这么做）。
