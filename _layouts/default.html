@@ -24,7 +24,6 @@
           // Add change background button
           $("#float-button-container").append("<div id=\"change-background\" class=\"float-button\"><svg fill=\"#FFFFFF\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z\"/></svg></div>");
           $("#change-background")
-          .attr("title", "更换背景")
           .css("background", "#E91E63")
           .click(function() {
             
@@ -38,7 +37,10 @@
             if (sessionStorage) {
               sessionStorage.setItem("backgroundImageUrl", imageUrl);
             }
-          });
+          })
+          
+          // Add change background tooltip
+          .append("<div class=\"float-tooltip\"><strong>更换背景</strong><br>将背景更换为一张随机图片，在当前会话有效。<br>注：如果你没有翻墙，可能加载速度会很慢。</div>");
           
           // Display float buttons
           $("#float-button-container").delay(2000).fadeIn(500);

@@ -210,17 +210,39 @@ header .site-header {
 	align-items: center;
 	-webkit-align-items: center;
 	text-align: center;
-	vertical-align: center;
+	vertical-align: middle;
 	
 	box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.25);
 	@include transition(box-shadow 0.2s ease-out);
 	
-	&:hover {
-		box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.5);
-	}
-	
 	svg {
 		margin: auto;
+	}
+	
+	.float-tooltip {
+		display: none;
+		position: absolute;
+		right: 56px + 12px;
+		bottom: -12px;
+		width: 400%;
+		
+		color: white;
+		background-color: #424242;
+		border: 1px solid #212121;
+		border-radius: 5px;
+		box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.25);
+		
+		padding: 5px;
+		text-align: left;
+		font-size: 12px;
+	}
+	
+	&:hover {
+		box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.5);
+		
+		.float-tooltip {
+			display: block;
+		}
 	}
 }
 
