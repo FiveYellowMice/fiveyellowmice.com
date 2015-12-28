@@ -13,64 +13,7 @@
       </div>
     </div>
 
-    <script>
-      if ( $(window).width() > 1000 ) {
-        document.write("<div id=\"float-button-container\"></div>");
-      }
-      
-      $(document).ready(function() {
-        if ($("#float-button-container")) {
-          
-          // Add change background button
-          $("#float-button-container").append("<div id=\"change-background\" class=\"float-button\"><svg fill=\"#FFFFFF\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z\"/></svg></div>");
-          $("#change-background")
-          .css("background", "#E91E63")
-          .click(function() {
-            
-            // Select a random image
-            var candidates = ["Autumn", "BytheWater", "ColdRipple", "ColorfulCups", "DarkestHour", "EveningGlow", "FallenLeaf", "Grey", "Kite", "OneStandsOut", "PastelHills", "Path", "summer_1am"];
-            var randomNumber = Math.floor(Math.random() * candidates.length);
-            var imageUrl = "url(\"https://cdn.rawgit.com/KDE/plasma-workspace-wallpapers/master/" + candidates[randomNumber] +"/contents/images/1920x1080.jpg\")";
-            setBackgroundImage(imageUrl);
-            
-            // Store URL in session storage
-            if (sessionStorage) {
-              sessionStorage.setItem("backgroundImageUrl", imageUrl);
-            }
-          })
-          
-          // Add change background tooltip
-          .append("<div class=\"float-tooltip\"><strong>更换背景</strong><br>将背景更换为一张随机图片，在当前会话有效。<br>注：如果你没有翻墙，可能加载速度会很慢。</div>");
-          
-          // Display float buttons
-          $("#float-button-container").delay(2000).fadeIn(500);
-          
-          // Hide float buttons when see footer
-          $(window).scroll(_.throttle(function() {
-            if ( $(window).scrollTop() + $(window).height() > $(document).height() - $(".site-footer").height() ) {
-              $("#float-button-container").fadeOut(500);
-            } else if ( $("#float-button-container").css("display") === "none" ) {
-              $("#float-button-container").fadeIn(500);
-            }
-          }, 1000));
-        }
-      });
-      
-      // Read session storage and set background
-      if (sessionStorage && sessionStorage.getItem("backgroundImageUrl")) {
-        setBackgroundImage(sessionStorage.getItem("backgroundImageUrl"));
-      }
-      
-      function setBackgroundImage(imageUrl) {
-        $("body").css({
-          "background-image": imageUrl,
-          "background-attachment": "fixed",
-          "background-position": "center top",
-          "background-repeat": "no-repeat",
-          "background-size": "cover"
-        });
-      }
-    </script>
+    {% include float_buttons.html %}
 
     {% include footer.html %}
 
