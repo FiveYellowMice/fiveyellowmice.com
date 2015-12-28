@@ -41,6 +41,7 @@ sitemap: true
 
 底下的 G+ 按钮： Google+, Proporietary, Copyright &copy; 2015 Google Inc.  
 底下的哔哩哔哩按钮：我找了半天都没有找到他们的商标使用政策……:unamused:  
+随机背景图片： Plasma Workspace Wallpapers, GPL v2, [KDE Visual Design Group](http://vdesign.kde.org/)  
 Emoji ： [Noto Emoji](https://github.com/googlei18n/noto-emoji), Apache License, Copyright &copy; 2015 Google Inc.  
 以上人或组织没有特别授权我对这些东西的使用。
 
