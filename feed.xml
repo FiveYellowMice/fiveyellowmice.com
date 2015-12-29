@@ -17,6 +17,7 @@
         <description>
           {% if post.headpic %}&lt;p&gt;&lt;img src=&quot;{{ site.baseurl }}/images/{{ post.date | date: "%Y/%m" }}/{{ post.headpic }}&quot;{% if post.headpic_alt %} alt=&quot;{{ post.headpic_alt }}&quot;{% endif %}&gt;&lt;/p&gt;{% endif %}
           {{ post.content | xml_escape }}
+          &lt;p&gt;&lt;em&gt;虽然 RSS 是一种很好的新闻获取方式，但是不同的 RSS 阅读器所显示的内容可能会有很大差距，有些甚至无法显示所有内容。所以为了能够获取到完整的内容，最好还是点开网页链接看。&lt;br&gt;之所以还是保留了 RSS 的全文输出，是因为摘要输出会被很多人讨厌……&lt;/em&gt;&lt;/p&gt;
         </description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
