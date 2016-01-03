@@ -198,6 +198,8 @@ header .site-header {
 }
 
 .float-button {
+	position: relative;
+	margin-top: 16px;
 	width: 56px;
 	height: 56px;
 	border: none;
@@ -224,7 +226,7 @@ header .site-header {
 		position: absolute;
 		right: 56px + 12px;
 		bottom: -12px;
-		width: 400%;
+		width: 56px * 4;
 		
 		color: white;
 		background-color: #424242;
