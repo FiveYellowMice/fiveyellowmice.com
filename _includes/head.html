@@ -12,13 +12,13 @@
     <link rel="apple-touch-icon" sizes="192x192" href="{{ site.baseurl }}/favicon-192.png">
     
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:description" content="{% if page.excerptable %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <meta property="og:image" content="{{ site.url }}{% if page.headpic %}/images/{{ page.date | date: '%Y/%m' }}/{{ page.headpic }}{% else %}/favicon-192.png{% endif %}">
     
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
