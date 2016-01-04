@@ -35,6 +35,9 @@
 				.html("<svg fill=\"#FFFFFF\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z\"/></svg>")
 				.css("background", "#F9A825")
 				.append("<div class=\"float-tooltip\"><strong>微博发布</strong><br>中共中央总书记习近平会使用的为数不多的键盘按钮之一。</div>")
+				.click(function() {
+					window.open("http://service.weibo.com/share/share.php?url=" + encodeURIComponent("{{ page.url | replace:'index.html','' | prepend: site.url }}") + "&title=" + encodeURIComponent("{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"));
+				})
 			);
 			
 			// Display float buttons
