@@ -37,8 +37,7 @@ header .site-header {
 		
 		.page-link {
 			margin-left: 5px;
-			padding-left: 4px;
-			padding-right: 4px;
+			padding: 4px;
 			border-radius: 4px;
 			
 			@include transition(background 0.2s ease-out);

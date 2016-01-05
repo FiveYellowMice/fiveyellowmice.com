@@ -7,9 +7,10 @@ ul, ol, li {
 	padding: 0;
 	border: none;
 	
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Arial, sans-serif, "WenQuanYi Zen Hei";
 	font-size: 16px;
 	font-weight: normal;
+	line-height: 150%;
 }
 
 // Background
@@ -21,7 +22,6 @@ body {
 p {
 	margin-top: 10px;
 	margin-bottom: 10px;
-	line-height: 150%;
 }
 
 // Headers
@@ -102,6 +102,14 @@ blockquote {
 // List
 ul, ol {
 	margin: 10px 0 10px $indent;
+}
+
+// Horizontal reference
+hr {
+	color: #999999;
+	background: #999999;
+	border: none;
+	height: 1px;
 }
 
 // Wrapper
