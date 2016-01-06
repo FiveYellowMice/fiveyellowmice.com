@@ -43,14 +43,14 @@
 			// Display float buttons
 			$("#float-button-container").delay(2000).fadeIn(500);
 			
-			// Hide float buttons when see footer
+			// Move float buttons up when see footer
 			$(window).scroll(_.throttle(function() {
-				if ( $(window).scrollTop() + $(window).height() > $(document).height() - $(".site-footer").height() ) {
-					$("#float-button-container").fadeOut(500);
-				} else if ( $("#float-button-container").css("display") === "none" ) {
-					$("#float-button-container").fadeIn(500);
+				if ( $(window).scrollTop() + $(window).height() > $(document).height() - $(".site-footer").outerHeight() ) {
+					$("#float-button-container").animate({ bottom: (32 + $(".site-footer").outerHeight()) + "px" }, 500);
+				} else if ( $("#float-button-container").css("bottom") !== "32px" ) {
+					$("#float-button-container").animate({ bottom: "32px" }, 500);
 				}
-			}, 1000));
+			}, 500));
 		}
 	});
       
