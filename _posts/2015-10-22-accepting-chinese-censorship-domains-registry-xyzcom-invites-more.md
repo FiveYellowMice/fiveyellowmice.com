@@ -4,7 +4,11 @@ date: 2015-10-22 09:28
 tags: 水表 网络 翻译
 headpic: icann-1.png
 headpic_alt: "I cann't even"
+excerpt: >
+  域名注册商 xyz.com 给 ICANN 发送了一份请求，想要让它自动审查符合中国政府黑名单的新域名。行内新闻网站 Domain Incite 报告说，这将会在黑名单中加入将近 12,000 个被禁止的词语和句子，从而阻止像中文的“民主”和“人权”这样的词语被注册到这个公司所提供的顶级域名中——包括 .xyz, .college, .rent, .theatre, .protection 和 .security 。这不仅包括中国的注册者，全世界的注册者都不能注册这样的域名。
 ---
+
+_**11 月 04 日更新：** .xyz 的 CEO [写道](https://ceo.xyz/freedom/)，他们不承认任何在他们那里注册的域名会被封锁，就如[他们的提案中所说的](https://www.icann.org/en/system/files/files/request-2014154-multiple-09oct15-en.pdf)一样。不管这件事是对提案的误解，还是他们反转了立场，我们都很欢迎现在 .xyz 给出的明确声明，也就是中国以及全世界的互联网用户都可以在 .xyz 提供的顶级域名中，自由的注册包含令中国政府不满的词句的域名。_
 
 域名注册商 xyz.com 给 ICANN 发送了[一份请求][1]，想要让它自动审查符合中国政府黑名单的新域名。行内新闻网站 [Domain Incite 报告说][2]，这将会在黑名单中加入[将近 12,000 个][3]被禁止的词语和句子，从而阻止像中文的“民主”和“人权”这样的词语被注册到这个公司所提供的顶级域名中——包括 .xyz, .college, .rent, .theatre, .protection 和 .security 。这不仅包括中国的注册者，全世界的注册者都不能注册这样的域名。
 
