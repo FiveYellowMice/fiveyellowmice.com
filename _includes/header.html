@@ -31,7 +31,7 @@
   </div>
   
   <script>
-    $(document).ready(function() {
+    document.addEventListener("DOMContentLoaded", function() {
       $(".menu-button").on("touchstart", function() {
         $(".menu-wrapper").removeClass("trigger");
         $(".nav-items").delay(200).toggle(400);

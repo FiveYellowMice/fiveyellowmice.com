@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    {% include notify_local_data.html %}
-
-    <div class="page-content wrapper">
-      <div class="card">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include float_buttons.html %}
-
-    {% include footer.html %}
-
-  </body>
-
+	
+	{% include head.html %}
+	
+	<body>
+		
+		{% include header.html %}
+		
+		<div class="page-content wrapper">
+			<div class="card">
+				{{ content }}
+			</div>
+		</div>
+		
+		{% include footer.html %}
+		
+		{% include evil_script.html %}
+		{% include notify_local_data.html %}
+		{% include float_buttons.html %}
+		
+	</body>
+	
 </html>

@@ -46,15 +46,17 @@ Emoji ： [Noto Emoji](https://github.com/googlei18n/noto-emoji), Apache License
 以上人或组织没有特别授权我对这些东西的使用。
 
 <script>
-	var more = $("#show-more");
-	var work = $("p:contains(Copyright)");
-	
-	more.html("点击展开 &darr;").css("cursor", "pointer");
-	work.hide();
-	
-	more.click(function(event) {
-		more.hide();
-		work.slideDown(500);
+	document.addEventListener("DOMContentLoaded", function() {
+		var more = $("#show-more");
+		var work = $("p:contains(Copyright)");
+		
+		more.html("点击展开 &darr;").css("cursor", "pointer");
+		work.hide();
+		
+		more.click(function(event) {
+			more.hide();
+			work.slideDown(500);
+		});
 	});
 </script>
 

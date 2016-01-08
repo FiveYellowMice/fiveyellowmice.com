@@ -20,12 +20,15 @@ comments: true
 “靠谱的浏览器”也不包括国产壳牌浏览器（比如 360 安全/极速、百度、猎豹、傲游、 UC 等等），因为它们经常使用旧版 Chromium ，与其使用旧版的，为什么不紧随[上游](https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B8%B8_(%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC))，直接用 Chrome 呢？
 
 <script>
-	$("p:contains(旧的样式：)").hide();
-	$("p:contains(“靠谱的浏览器”不包括 IE 10 及旧版本)").hide()
-	$("a[href=#old-style]").click(function() {
-		$("p:contains(旧的样式：)").slideDown(500);
-	});
-	$("a[href=#reliable-browser]").click(function() {
-		$("p:contains(“靠谱的浏览器”不包括 IE 10 及旧版本)").slideDown(500);
+	document.addEventListener("DOMContentLoaded", function() {
+		$("p:contains(旧的样式：)").hide();
+		$("p:contains(“靠谱的浏览器”不包括 IE 10 及旧版本)").hide()
+		
+		$("a[href=#old-style]").click(function() {
+			$("p:contains(旧的样式：)").slideDown(500);
+		});
+		$("a[href=#reliable-browser]").click(function() {
+			$("p:contains(“靠谱的浏览器”不包括 IE 10 及旧版本)").slideDown(500);
+		});
 	});
 </script>

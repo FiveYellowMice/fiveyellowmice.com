@@ -5,23 +5,25 @@ sitemap: true
 
 <div class="home">
 	
-	<p class="page-description">{{ site.description }}</p>
+	<p class="site-description">{{ site.description }}</p>
 	
 	<script>
-		document.write("<p id=\"fortune\"></p>");
-		$("#fortune").hide();
-		
-		$.getJSON( "https://api.github.com/gists/c0581783983b05ca28f7", function(data) {
+		document.addEventListener("DOMContentLoaded", function() {
 			
-			fortunes = JSON.parse(data.files["fortunes.json"].content);
-			randomFortune = fortunes[ Math.floor( Math.random() * fortunes.length ) ];
-			if ( randomFortune.author === undefined ) {
-				$("#fortune").html( "<a href=\"https://gist.github.com/FiveYellowMice/c0581783983b05ca28f7\">动态格言</a>：<br>" + randomFortune.content );
-			} else {
-				$("#fortune").html( "<a href=\"https://gist.github.com/FiveYellowMice/c0581783983b05ca28f7\">动态格言</a>：<br>" + randomFortune.content + "<br>--" + randomFortune.author );
-			}
+			$(".site-description").after($("<p>").attr("id", "fortune").css("display", "none"));
 			
-			$("#fortune").slideDown("100");
+			$.getJSON( "https://api.github.com/gists/c0581783983b05ca28f7", function(data) {
+				
+				fortunes = JSON.parse(data.files["fortunes.json"].content);
+				randomFortune = fortunes[ Math.floor( Math.random() * fortunes.length ) ];
+				if ( randomFortune.author === undefined ) {
+					$("#fortune").html( "<a href=\"https://gist.github.com/FiveYellowMice/c0581783983b05ca28f7\">动态格言</a>：<br>" + randomFortune.content );
+				} else {
+					$("#fortune").html( "<a href=\"https://gist.github.com/FiveYellowMice/c0581783983b05ca28f7\">动态格言</a>：<br>" + randomFortune.content + "<br>--" + randomFortune.author );
+				}
+				
+				$("#fortune").slideDown("100");
+			});
 		});
 	</script>
 	
