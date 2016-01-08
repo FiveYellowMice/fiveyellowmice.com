@@ -27,6 +27,10 @@ gems:
 emoji:
   src: "/images"
 
+# Sass
+sass:
+  style: compressed
+
 # Defaults
 defaults:
   -
