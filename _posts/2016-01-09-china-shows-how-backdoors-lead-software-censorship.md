@@ -22,6 +22,10 @@ headpic_alt: 警察要求上缴手机
 
 “我们会允许一种根本无法被阅读的通讯吗？”戴维·卡梅伦在一年前曾[如此问过][7]。然后他自己回答道：“不，我们必须禁止。”但是他，以及其他的正在考虑后门政策的政府官员们有考虑过所有的后果吗？他们是都在想盲目地走向新疆吗？
 
+------
+
+翻译自 EFF 的 [Your Apps, Please? China Shows how Surveillance Leads to Intimidation and Software Censorship](https://www.eff.org/deeplinks/2016/01/china-shows-how-backdoors-lead-software-censorship) 。
+
 [1]: http://thediplomat.com/2014/07/how-china-dismantled-the-uyghur-internet/
 [2]: http://uhrp.org/press-release/trapped-virtual-cage-chinese-state-repression-uyghurs-online.html
 [3]: http://www.economist.com/news/special-report/21574633-turning-entire-internet-nuclear-option-best-not-exercised-thou-shalt-not-kill
