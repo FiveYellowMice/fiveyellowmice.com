@@ -22,7 +22,7 @@ sitemap: true
 					$("#fortune").html( "<a href=\"https://gist.github.com/FiveYellowMice/c0581783983b05ca28f7\">动态格言</a>：<br>" + randomFortune.content + "<br>--" + randomFortune.author );
 				}
 				
-				$("#fortune").slideDown("100");
+				$("#fortune").velocity("slideDown", { duration: 400, easing: "easeOutQuad" });
 			});
 		});
 	</script>

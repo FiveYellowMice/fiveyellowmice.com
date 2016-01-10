@@ -41,14 +41,14 @@
 			);
 			
 			// Display float buttons
-			$("#float-button-container").delay(2000).fadeIn(500);
+			$("#float-button-container").velocity("fadeIn", { delay: 2000, duration: 500, easing: "easeOutQuad" });
 			
 			// Move float buttons up when see footer
 			$(window).scroll(_.throttle(function() {
 				if ( $(window).scrollTop() + $(window).height() > $(document).height() - $(".site-footer").outerHeight() ) {
-					$("#float-button-container").animate({ bottom: (32 + $(".site-footer").outerHeight()) + "px" }, 500);
+					$("#float-button-container").velocity({ bottom: (32 + $(".site-footer").outerHeight()) + "px" }, { duration: 500, easing: "easeOutQuad" });
 				} else if ( $("#float-button-container").css("bottom") !== "32px" ) {
-					$("#float-button-container").animate({ bottom: "32px" }, 500);
+					$("#float-button-container").velocity({ bottom: "32px" }, { duration: 500, easing: "easeOutQuad" });
 				}
 			}, 500));
 		}

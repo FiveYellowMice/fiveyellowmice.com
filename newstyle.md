@@ -22,13 +22,13 @@ comments: true
 <script>
 	document.addEventListener("DOMContentLoaded", function() {
 		$("p:contains(旧的样式：)").hide();
-		$("p:contains(“靠谱的浏览器”不包括 IE 10 及旧版本)").hide()
+		$("p:contains(“靠谱的浏览器”不包括 IE 10 及旧版本)").hide();
 		
-		$("a[href=#old-style]").click(function() {
-			$("p:contains(旧的样式：)").slideDown(500);
+		$("a[href=#old-style]").attr("href", "javascript:void(0)").click(function() {
+			$("p:contains(旧的样式：)").velocity("slideDown", { duration: 500, easing: "easeOutQuad" });
 		});
-		$("a[href=#reliable-browser]").click(function() {
-			$("p:contains(“靠谱的浏览器”不包括 IE 10 及旧版本)").slideDown(500);
+		$("a[href=#reliable-browser]").attr("href", "javascript:void(0)").click(function() {
+			$("p:contains(“靠谱的浏览器”不包括 IE 10 及旧版本)").velocity("slideDown", { duration: 500, easing: "easeOutQuad" });
 		});
 	});
 </script>
