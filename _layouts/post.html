@@ -12,7 +12,7 @@ layout: default
 		</div>
 		
 		{% if page.headpic %}
-		<p><img src="{{ site.baseurl }}/images/{{ page.date | date: "%Y/%m" }}/{{ page.headpic }}"{% if page.headpic_alt %} alt="{{ page.headpic_alt }}"{% endif %}></p>
+		<p><img class="post-headpic" src="{{ site.baseurl }}/images/{{ page.date | date: "%Y/%m" }}/{{ page.headpic }}"{% if page.headpic_alt %} alt="{{ page.headpic_alt }}"{% endif %}></p>
 		{% endif %}
 		{{ content }}
 	</article>
