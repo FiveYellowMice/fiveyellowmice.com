@@ -29,7 +29,7 @@ headpic_alt: 警察要求上缴手机
 [1]: http://thediplomat.com/2014/07/how-china-dismantled-the-uyghur-internet/
 [2]: http://uhrp.org/press-release/trapped-virtual-cage-chinese-state-repression-uyghurs-online.html
 [3]: http://www.economist.com/news/special-report/21574633-turning-entire-internet-nuclear-option-best-not-exercised-thou-shalt-not-kill
-[4]: http://www.nytimes.com/2015/11/24/business/international/china-cuts-mobile-service-of-xinjiang-residents-evading-internet-filters.html
-[5]: http://www.nytimes.com/2016/01/03/world/asia/xinjiang-seethes-under-chinese-crackdown.html
+[4]: http://cn.nytimes.com/china/20151124/c24chinavpn/
+[5]: http://cn.nytimes.com/china/20160104/c04xinjiang/
 [6]: http://www.theguardian.com/technology/2012/mar/02/censorship-inseperable-from-surveillance
 [7]: http://www.telegraph.co.uk/technology/internet-security/11340621/Spies-should-be-able-to-monitor-all-online-messaging-says-David-Cameron.html
