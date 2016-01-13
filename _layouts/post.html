@@ -17,6 +17,18 @@ layout: default
 		{{ content }}
 	</article>
 	
+	<div class="social-share">
+		分享到：
+		{% assign permalink = page.url | replace:'index.html','' | prepend: site.url %}
+		<a href="https://www.facebook.com/sharer.php?u={{ permalink }}" target="_blank">Facebook</a>
+		<a href="https://plus.google.com/share?url={{ permalink }}" target="_blank">Google+</a>
+		<a href="https://pinterest.com/pin/create/bookmarklet/?url={{ permalink }}&amp;description={{ page.title }}" target="_blank">Pinterest</a>
+		<a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{ permalink }}" target="_blank">QQ 空间</a>
+		<a href="https://www.reddit.com/submit?url={{ permalink }}&amp;title={{ page.title }}" target="_blank">Reddit</a>
+		<a href="https://twitter.com/share?url={{ permalink }}&amp;text={{ page.title }}" target="_blank">Twitter</a>
+		<a href="http://service.weibo.com/share/share.php?url={{ permalink }}&amp;title={{ page.title }}" target="_blank">微博</a>
+	</div>
+	
 	{% if page.comments %}
 	{% include disqus_comment.html %}
 	{% endif %}

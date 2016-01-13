@@ -111,6 +111,32 @@ header .site-header {
 	padding-top: $header-height + 20px;
 }
 
+// Social share
+.social-share {
+	width: 100%;
+	margin-top: 24px;
+	color: #607D8B;
+	
+	a {
+		color: #607D8B;
+		border-radius: 4px;
+		padding: 4px;
+		
+		@include transition-two(background 0.2s ease-out, color 0.2s ease-out);
+		
+		&:hover {
+			text-decoration: none;
+			background: rgba(0, 0, 0, 0.25);
+			color: black;
+		}
+		
+		&:active {
+			background: rgba(0, 0, 0, 0.50);
+			@include transition(initial);
+		}
+	}
+}
+
 // Footer
 .site-footer {
 	box-shadow: $light-shadow;
