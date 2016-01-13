@@ -27,6 +27,7 @@ layout: default
 		<a href="https://www.reddit.com/submit?url={{ permalink }}&amp;title={{ page.title }}" target="_blank">Reddit</a>
 		<a href="https://twitter.com/share?url={{ permalink }}&amp;text={{ page.title }}" target="_blank">Twitter</a>
 		<a href="http://service.weibo.com/share/share.php?url={{ permalink }}&amp;title={{ page.title }}" target="_blank">微博</a>
+		{% if page.shortlink %}<br>短链接： <a rel="shortlink" href="https://fivy.ml/{{ page.shortlink }}">fivy.ml/{{ page.shortlink }}</a>{% endif %}
 	</div>
 	
 	{% if page.comments %}

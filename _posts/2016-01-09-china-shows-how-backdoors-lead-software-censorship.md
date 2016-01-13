@@ -2,6 +2,7 @@
 title: “可以看一下你手机里的应用吗？”中国向我们展示了监视是如何转变为恐吓和软件审查的
 date: 2016-01-09 14:56
 tags: 翻译 水表
+shortlink: china-software-censor
 headpic: fpg-apps-china.png
 headpic_alt: 警察要求上缴手机
 ---

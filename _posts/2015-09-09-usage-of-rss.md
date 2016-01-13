@@ -2,6 +2,7 @@
 title: "RSS 的使用方法"
 date: 2015-09-09 07:39
 tags: 软件 扫盲
+shortlink: use-rss
 headpic: akregator.png
 headpic_alt: "Akregator 界面截图"
 ---
