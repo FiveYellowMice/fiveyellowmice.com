@@ -186,13 +186,13 @@ header .site-header {
 		vertical-align: middle;
 	}
 	
-	@media (max-width: 800px) {
+	@media (max-width: 860px) {
 		.username {
 			display: none;
 		}
 	}
 	
-	@media (max-width: 640px) {
+	@media (max-width: 645px) {
 		display: block;
 		
 		> * {
