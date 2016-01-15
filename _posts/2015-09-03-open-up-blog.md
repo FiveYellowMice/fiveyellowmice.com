@@ -2,7 +2,7 @@
 title: "我开博客了！"
 date: 2015-09-03 12:53
 tags: 个人 更新
-shortlink: open-blog
+shortlink: uah
 ---
 
 以前一直想开一个博客，但是总觉得没什么东西好写，更不会有人看。  

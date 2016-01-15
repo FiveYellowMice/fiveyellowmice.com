@@ -2,7 +2,7 @@
 title: 同意了中国对域名的审查之后，域名注册商 xyz.com 还想要更多
 date: 2015-10-22 09:28
 tags: 水表 网络 翻译
-shortlink: xyz-censor
+shortlink: qxf
 headpic: icann-1.png
 headpic_alt: "I cann't even"
 excerpt: >

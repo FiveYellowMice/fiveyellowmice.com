@@ -2,7 +2,7 @@
 title: "为什么我们要选择这 0.01 的生活"
 date: 2015-09-07 03:52
 tags: 转载 Linux
-shortlink: 0.01
+shortlink: ini
 cc_by_sa: false
 headpic: i-am-the-1-percent-tshirt-front-hr.jpg
 headpic_alt: "I am 1 percent T-shirt"

@@ -2,7 +2,7 @@
 title: "用 Skype 的好处"
 date: 2015-09-06 10:34
 tags: 软件
-shortlink: skype
+shortlink: yms
 cc_by_sa: false
 headpic: Skype_logo.png
 headpic_alt: "Skype logo"
