@@ -12,7 +12,7 @@ headpic_alt: 钢之炼金术师
 
 ----------
 
-在美国的[洛斯费利斯](https://goo.gl/maps/MU3oLqc8YZL2) 中，佛蒙特与富兰克林的角落，一个曾经粗野但现在风潮的街区，有一个“派之屋”（就是苹果派、草莓派、蛋黄派的那个派）。它在 1965 年创立，曾持续蓬勃发展了一段时间（它的创建者阿尔·拉宾，也创立了“国际煎饼之屋”），但不久后就迅速衰弱。它几乎歇业，勉强还留存在原来的地点，然后现在作为一个像是工作博物馆一样的东西存在。为一群小屁孩提供餐饮服务，还有一些老前辈把这里当作回忆的地方，当然也可能仅仅是讽刺。
+在美国的[洛斯费利斯](https://goo.gl/maps/MU3oLqc8YZL2)中，佛蒙特与富兰克林的角落，一个曾经粗野但现在风潮的街区，有一个“派之屋”（就是苹果派、草莓派、蛋黄派的那个派）。它在 1965 年创立，曾持续蓬勃发展了一段时间（它的创建者阿尔·拉宾，也创立了“国际煎饼之屋”），但不久后就迅速衰弱。它几乎歇业，勉强还留存在原来的地点，然后现在作为一个像是工作博物馆一样的东西存在。为一群小屁孩提供餐饮服务，还有一些老前辈把这里当作回忆的地方，当然也可能仅仅是讽刺。
 
 我把这段内容作为开场白是有意义的，相信我。
 
@@ -21,9 +21,10 @@ headpic_alt: 钢之炼金术师
 不相信我吗？那你应该会相信托马斯·罗明，他发了[这条推文](https://twitter.com/Thomasintokyo/status/679101850189217792)：
 
 >	Anime before - Anime now  
->	![Anime before - Anime now]({{ site.baseurl }}/images/2016/01/anime-before-now.jpg)  
->	（以前的动漫：镭射枪、惊异感、银河探险、文学经典、酷英雄、戏剧、喜剧、吸引人的领导人物、科学幻想、雪茄、记忆犹新的设计、未来的展望、暴力、强壮甚至没有胸部的女性角色、原创概念、各种各样的性、悬念、引人注目的气氛、悬疑、悲剧、伟大的冒险、史诗般的战斗、可爱的少女；  
->	现在的动漫：可爱的少女、可爱的少女、可爱的少女……）
+>	![Anime before - Anime now]({{ site.baseurl }}/images/2016/01/anime-before-now.jpg)
+>	
+>	-	以前的动漫：镭射枪、惊异感、银河探险、文学经典、酷英雄、戏剧、喜剧、吸引人的领导人物、科学幻想、雪茄、记忆犹新的设计、未来的展望、暴力、强壮甚至没有胸部的女性角色、原创概念、各种各样的性、悬念、引人注目的气氛、悬疑、悲剧、伟大的冒险、史诗般的战斗、可爱的少女；
+>	-	现在的动漫：可爱的少女、可爱的少女、可爱的少女、可爱的少年、可爱的少女……
 >	
 >	&mdash; ThomasRomain ロマン・トマ (@Thomasintokyo) [December 22, 2015](https://twitter.com/Thomasintokyo/status/679101850189217792)
 
@@ -63,8 +64,7 @@ headpic_alt: 钢之炼金术师
 
 优秀的文学[《精灵的守护者》](http://bangumi.tv/subject/1976)，科幻[《天元突破 红莲螺岩》](http://bangumi.tv/subject/770)，马猴烧酒传奇[《魔法少女奈叶 StrikerS 》](http://bangumi.tv/subject/1264)，超自然幻想[《大剑》](http://bangumi.tv/subject/982)，Bones 的未来青年[《黑之契约者》](http://bangumi.tv/subject/292)，京都动画的卖萌日常[《幸运星》](http://bangumi.tv/subject/276)，忠实体育[《王牌投手 振臂高挥》](http://bangumi.tv/subject/1267)，女性向[《英国恋物语～艾玛》](http://bangumi.tv/subject/1964)。这个列表看起来无穷无尽，我上面列举的还不到一半。
 
-上面列表中的所有节目都是优秀的吗？并不是。可爱的美少女有什么不好吗？一点儿也不。但是主题、受众、风格和形式的丰富多样，是在今日的环境中难以想象的。并且其中的一些节目将永远地成为经典。即使是在像 2012 年这样近的时候，你也能看见那
-一季（同样，是春季）包含了[《钓球》](http://bangumi.tv/subject/33255)、[《坂道上的阿波罗》](http://bangumi.tv/subject/29426)、[《迷样女友 X 》](http://bangumi.tv/subject/29323)、[《向银河开球》](http://bangumi.tv/subject/31374)、[《宇宙兄弟》](http://bangumi.tv/subject/28533)、[《白熊咖啡厅》](http://bangumi.tv/subject/32318)、[《僵尸哪有那么萌？》](http://bangumi.tv/subject/28230)、[《军火女王》](http://bangumi.tv/subject/29073)、[《 Fate/Zero 》](http://bangumi.tv/subject/10639)、[《交响诗篇优莱卡 7 》](http://bangumi.tv/subject/1759)和[《 UN-GO 》](http://bangumi.tv/subject/18636)。时代变化真大啊。
+上面列表中的所有节目都是优秀的吗？并不是。可爱的美少女有什么不好吗？一点儿也不。但是主题、受众、风格和形式的丰富多样，是在今日的环境中难以想象的。并且其中的一些节目将永远地成为经典。即使是在像 2012 年这样近的时候，你也能看见那一季（同样，是春季）包含了[《钓球》](http://bangumi.tv/subject/33255)、[《坂道上的阿波罗》](http://bangumi.tv/subject/29426)、[《迷样女友 X 》](http://bangumi.tv/subject/29323)、[《向银河开球》](http://bangumi.tv/subject/31374)、[《宇宙兄弟》](http://bangumi.tv/subject/28533)、[《白熊咖啡厅》](http://bangumi.tv/subject/32318)、[《僵尸哪有那么萌？》](http://bangumi.tv/subject/28230)、[《军火女王》](http://bangumi.tv/subject/29073)、[《 Fate/Zero 》](http://bangumi.tv/subject/10639)、[《交响诗篇优莱卡 7 》](http://bangumi.tv/subject/1759)和[《 UN-GO 》](http://bangumi.tv/subject/18636)。时代变化真大啊。
 
 现在挽救动漫的创造力是否太晚了呢？呃，庵野秀明和托马斯·罗宾显然要比我更博学。但我也跟他们一样喜欢动漫，只要有人喜欢动漫，他们能做的就是 **去支持那些尝试新领域的作品，以及支持像 Bones 那样保持直接面向全世界观众的工作室** ——如果有希望，我相信这条路是它的所在。
 
