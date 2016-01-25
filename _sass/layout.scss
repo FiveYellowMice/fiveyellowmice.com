@@ -70,6 +70,8 @@ header .site-header {
 				padding: 10px;
 				border-radius: 100%;
 				
+				-webkit-tap-highlight-color: rgba(0,0,0,0);
+				
 				@include transition(background 0.2s ease-out);
 				
 				&:active {

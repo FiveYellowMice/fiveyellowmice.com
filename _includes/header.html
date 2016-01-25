@@ -8,7 +8,7 @@
 
       <div class="menu-wrapper trigger">
       
-        <a class="menu-button">
+        <a class="menu-button" href="javascript:void(0)">
           <svg viewBox="0 0 16 16">
               <circle cx="8px" cy="2px" r="2px" fill="white" />
               <circle cx="8px" cy="8px" r="2px" fill="white" />
@@ -31,20 +31,7 @@
   </div>
   
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      $(".menu-button").on("touchstart", function() {
-        $(".menu-wrapper").removeClass("trigger");
-        if ( $(".nav-items").is(":visible") ) {
-			$(".nav-items").velocity("finish")
-			.velocity("slideUp", { delay: 200, duration: 400, easing: "easeInQuad" })
-			.velocity("fadeOut", { delay: 200, duration: 400, easing: "easeInQuad", queue: false });
-		} else {
-			$(".nav-items").velocity("finish")
-			.velocity("slideDown", { delay: 200, duration: 400, easing: "easeOutQuad" })
-			.velocity("fadeIn", { delay: 200, duration: 400, easing: "easeOutQuad", queue: false });
-		}
-      });
-    });
+    document.addEventListener("touchstart", function(){}, true);
   </script>
 
 </header>
