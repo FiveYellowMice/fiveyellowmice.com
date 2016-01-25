@@ -5,7 +5,7 @@ permalink: /links/
 comments: true
 ---
 
--	[<img src="https://yoitsu.moe/favicon.ico" alt="图标" width="16" height="16">约伊兹的萌狼乡手札（原思考未来）](https://yoitsu.moe)
+-	[<img src="https://blog.yoitsu.moe/favicon.ico" alt="图标" width="16" height="16">约伊兹的萌狼乡手札（原思考未来）](https://blog.yoitsu.moe)
 
 ----------------
 
