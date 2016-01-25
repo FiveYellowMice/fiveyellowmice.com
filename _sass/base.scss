@@ -66,6 +66,14 @@ a {
 	&:active {
 		color: #F9A825;
 	}
+	
+	&:focus {
+		outline: none;
+	}
+	
+	&::-moz-focus-inner {
+		border: 0;
+	}
 }
 
 // Images
