@@ -113,10 +113,14 @@ header .site-header {
 	padding-top: $header-height + 20px;
 }
 
+// Relatred posts
+.related-posts {
+	margin-top: 24px;
+}
+
 // Social share
 .social-share {
 	width: 100%;
-	margin-top: 24px;
 	color: #607D8B;
 	
 	a {
