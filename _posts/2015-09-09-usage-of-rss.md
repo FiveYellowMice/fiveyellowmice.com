@@ -68,7 +68,7 @@ RSS 是一种获取新闻或博客更新的一种十分便捷的方式，但是�
 
 ![RSS 图标](https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Feed-icon.svg/128px-Feed-icon.svg.png)
 
-这里以我的博客为例，在首页的底部，你就能看见“通过 RSS 关注我”这一行字，点开链接，大概会出现这样的一个鬼畜的页面：
+这里以我的博客为例，在首页的底部，你就能看见“通过 RSS 获得最及时的更新”这一行字，点开链接，大概会出现这样的一个鬼畜的页面：
 
 ![RSS 在浏览器中的样子]({{ site.baseurl }}/images/2015/09/rss_browser.png)
 
