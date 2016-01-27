@@ -39,10 +39,10 @@ sitemap: true
 
 在这个博客中经常有使用的别人的作品有：<a id="show-more" href="javascript:void(0)"></a>
 
-底下的 G+ 按钮： Google+, Proporietary, Copyright &copy; 2015 Google Inc.  
-底下的哔哩哔哩按钮：我找了半天都没有找到他们的商标使用政策……:unamused:  
 随机背景图片： Plasma Workspace Wallpapers, GPL v2, [KDE Visual Design Group](http://vdesign.kde.org/)  
 Emoji ： [Noto Emoji](https://github.com/googlei18n/noto-emoji), Apache License, Copyright &copy; 2015 Google Inc.  
+悬浮动作按钮的图标： [Material Icons](https://design.google.com/icons/), CC-BY, Google Inc.  
+繁简转换： [jquery-s2t](https://github.com/hustlzp/jquery-s2t), MIT, Copyright 2013-2014 hustlzp  
 以上人或组织没有特别授权我对这些东西的使用。
 
 <script>
