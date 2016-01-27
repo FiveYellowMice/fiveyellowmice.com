@@ -180,7 +180,7 @@ header .site-header {
 	}
 	
 	.username {
-		display: inline-block;
+		display: inline;
 	}
 	
 	.license {
@@ -192,14 +192,15 @@ header .site-header {
 		vertical-align: middle;
 	}
 	
-	@media (max-width: 860px) {
+	@media (max-width: 880px) {
 		.username {
 			display: none;
 		}
 	}
 	
-	@media (max-width: 645px) {
+	@media (max-width: 680px) {
 		display: block;
+		position: relative;
 		
 		> * {
 			display: block;
@@ -210,12 +211,14 @@ header .site-header {
 		}
 		
 		.username {
-			display: inline-block;
+			display: inline;
 		}
 		
 		.license {
-			margin-left: 5px;
-			float: none;
+			display: block;
+			position: absolute;
+			right: 5px;
+			bottom: 5px;
 		}
 	}
 }
