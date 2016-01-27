@@ -8,11 +8,6 @@ url: "https://fiveyellowmice.github.io"
 timezone: UTC
 excerpt_separator: <!--more-->
 
-# Social settings
-github_username: FiveYellowMice
-googleplus_id: 112855887065747609809
-bilibili_id: 1985403
-
 # Build settings
 markdown: redcarpet
 redcarpet: 
