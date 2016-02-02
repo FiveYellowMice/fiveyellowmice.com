@@ -21,7 +21,7 @@ permalink: /posts/:year/:month/:title.html
 gems:
   - jemoji
 emoji:
-  src: "https://fiveyellowmice.tk/static"
+  src: "https://util.fiveyellowmice.com"
 
 # Sass
 sass:
