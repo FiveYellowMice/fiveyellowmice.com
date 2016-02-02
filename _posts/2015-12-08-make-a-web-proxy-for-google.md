@@ -67,7 +67,7 @@ headpic_alt: 使用 Curly Turtle 搜索水表新闻
 
 不过即使我没有提供服务，只是给出了软件，我还是很心虚的。因为 Shadowsocks 也没有提供服务，而[它的主要作者已经被查水表了]({{ site.baseurl }}/posts/2015/09/speech-enables-speech-china-takes-aim-its-coders.html)。
 
-~~我这是在做死……~~:sob:
+<del>我这是在做死……</del>:sob:
 
 -----------
 
