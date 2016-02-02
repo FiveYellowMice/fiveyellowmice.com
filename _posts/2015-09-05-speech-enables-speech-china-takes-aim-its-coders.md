@@ -25,8 +25,8 @@ GoAgent ，中国更有名的审查规避工具之一，它的维护者，在星
 
 从另一个中国反审查软件的开发者， Clowwindy 的简短留言上，我们可以猜到，是什么让 Phus Lu 清除了他在这样一个十分流行的软件上超过四年的努力。 Clowwindy 是 ShadowSocks 的主要开发者，这是另一个通过在简单的服务器与可移动的客户端之间产生加密通道来规避 GFW 的工具。 Clowwindy 在上个星期也将他在 Github 上的库清除了。在已经空空如也的 Github 归档中的一条评论上， Clowwindy [用英语写道][5]：
 
->	Two days ago the police came to me and wanted me to stop working on this. Today they asked me to delete all the code from Github. I have no choice but obey.  
->	两天之前，警察来到了我这里并且想要我停止在这上面的工作。今天他们要求我删除 Github 上的所有代码。除了遵从以外，我别无选择。
+>   Two days ago the police came to me and wanted me to stop working on this. Today they asked me to delete all the code from Github. I have no choice but obey.  
+>   两天之前，警察来到了我这里并且想要我停止在这上面的工作。今天他们要求我删除 Github 上的所有代码。除了遵从以外，我别无选择。
 
 作者不久后就删除了这条评论。
 

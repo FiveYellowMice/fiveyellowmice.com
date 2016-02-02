@@ -5,17 +5,17 @@ permalink: /projects/
 sitemap: true
 ---
 
-下面是几个我在业余时间里~~忙里偷闲~~所做出来的一些中二计划。
+下面是几个我在业余时间里<del>忙里偷闲</del>所做出来的一些中二计划。
 
 大家看看就好，不要指望能看到什么令人惊奇的玩意。而且处于极不稳定状态的我，一个不小心就有可能把一个坑给弃了。
 
-## Curly Turtle
+## Curly Turtle {#curly-turtle}
 
 -	[GitHub Repository](https://github.com/FiveYellowMice/curly-turtle)
 
 一个可以让你免翻墙进行 Google 搜索的服务端程序，只提供程序不提供服务，你需要自己在 VPS 上部署。目前可以算 *开发完成* 了，相关介绍在[这篇博文]({{ site.baseurl }}/posts/2015/12/make-a-web-proxy-for-google.html)。
 
-## 如何使用 FFmpeg 进行视频转码
+## 如何使用 FFmpeg 进行视频转码 {#hcv-ffmpeg}
 
 -	[GitHub Repository](https://github.com/FiveYellowMice/how-to-convert-videos-with-ffmpeg-zh)
 
@@ -23,7 +23,7 @@ sitemap: true
 
 我已经完成了 [v0.2](https://github.com/FiveYellowMice/how-to-convert-videos-with-ffmpeg-zh/releases/tag/v0.2) 的发布，虽然它并不是一个已经完全完成的版本，不过已经基本完成了。详情查看[这篇博文]({{ site.baseurl }}/posts/2015/10/hcv-ffmpeg-release-0-2.html)。
 
-## 小白也能学会的 Galgame 制作
+## 小白也能学会的 Galgame 制作 {#onstut}
 
 -	[旧网页 （已废弃）](http://onstut.pe.hu)
 -	[网页](https://fiveyellowmice.github.io/onscripter-tutorial)

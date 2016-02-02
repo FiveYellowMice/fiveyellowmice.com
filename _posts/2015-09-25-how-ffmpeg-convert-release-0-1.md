@@ -23,9 +23,9 @@ headpic_alt: Google+ 上全是我的帖子
 
 最后希望你在阅读之后，能够得心应手地使用 FFmpeg ！
 
->	Converting video and audio has never been so easy.  
->	转换视频和音频从未如此简单。  
->	-- FFmpeg 官网
+>   Converting video and audio has never been so easy.  
+>   转换视频和音频从未如此简单。  
+>   -- FFmpeg 官网
 
 [gh repo]: https://github.com/FiveYellowMice/how-to-convert-videos-with-ffmpeg-zh
 [last chapter]: https://github.com/FiveYellowMice/how-to-convert-videos-with-ffmpeg-zh/blob/master/10-write-in-end.md

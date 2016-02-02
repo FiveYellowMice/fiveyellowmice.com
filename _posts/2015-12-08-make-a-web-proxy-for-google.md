@@ -11,7 +11,7 @@ headpic_alt: 使用 Curly Turtle 搜索水表新闻
 
 <!--more-->
 
-## 翻墙软件的麻烦
+## 翻墙软件的麻烦 {#inconvenience-of-wall-climb-softwares}
 
 我有上 Google 的需求，但是这个需求要怎样才能满足呢？当然是翻墙了。有自由门、无界这种[开发者比较敏感](https://zh.wikipedia.org/wiki/%E6%B3%95%E8%BD%AE%E5%8A%9F)而且正邪未知的翻墙软件 / 服务，也有[赛风](https://psiphon.ca/)、 [Tor](https://www.torproject.org/) 、 [XX-Net](https://github.com/XX-net/XX-Net) 这种自由而且开源的翻墙软件 / 服务，当然也少不了备受好评、自由开源，但是需要自己架设服务器的 [Shadowsocks](https://github.com/Long-live-shadowsocks/shadowsocks) 。
 
@@ -21,7 +21,7 @@ headpic_alt: 使用 Curly Turtle 搜索水表新闻
 
 第二个问题是机动性不足。还是拿 Shadowsocks 来举例，我需要在一台电脑下载并配置好这个客户端，配置好了以后还得改浏览器代理设置，然后才能够享受自由互联网。在自己的设备上这样做也就稍微折腾一下，不成问题，但是如果你在使用别人的设备呢？先排除上一段已经讲过的平台兼容性问题，在别人的设备上装软件总是不太好的吧。如果你使用的是公共设备，比如图书馆里的电脑，那不但麻烦（得重新折腾），而且图书馆一般不会给你管理员权限，你还不一定装的上。
 
-## 反向代理的缺点
+## 反向代理的缺点 {#cons-of-reverse-proxy}
 
 有什么办法呢？我没有办法，要翻墙还是不得不需要一个客户端。但是，有一种方式，可以让你无需翻墙就可以访问原本需要翻墙才能访问的服务。这种方式叫做[反向代理](https://zh.wikipedia.org/wiki/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86)。
 
@@ -37,7 +37,7 @@ headpic_alt: 使用 Curly Turtle 搜索水表新闻
 
 以上两段就是我在决定开始开发 Curly Turtle 前所遇到的问题。
 
-## Curly Turtle 的特性
+## Curly Turtle 的特性 {#features-of-curly-turtle}
 
 既然替换 HTML 中的链接行不通，为什么不干脆把原来的 HTML 扔掉，重新组建成一个包含信息的网页呢？
 
@@ -49,7 +49,7 @@ headpic_alt: 使用 Curly Turtle 搜索水表新闻
 
 因为我觉得访问自由互联网是每个人的自由 ，所以为了争取这项自由所使用的软件也应当是[自由的]({{ site.baseurl }}/posts/2015/11/keep-this-freedom.html)。 Curly Turtle 采用 GPL v3 授权开放源代码（嘛，虽然应该写的很垃圾）放在了 GitHub 上，对于如何使用它的说明也在那里，[链接在这儿](https://github.com/FiveYellowMice/curly-turtle)。
 
-## 不得已的妥协
+## 不得已的妥协 {#unavoidable-compromise}
 
 有人可能会问我，为什么一定需要一个子目录呢？
 
@@ -63,11 +63,11 @@ headpic_alt: 使用 Curly Turtle 搜索水表新闻
 
 如果你觉得你想要用 Curly Turtle 搭一个公共的网页代理，那当然是极好的。但是请原谅我打击你的积极性，如果你在中国大陆，为了你 VPS 能使用得更长久一些，为了你的人身安全，别这么做。当然你要是最后真分享出来了还流传很广还没被查水表，把我的脸打的啪啪响，那我也心甘情愿被打啊。
 
-## 最后的顾虑
+## 最后的顾虑 {#last-worry}
 
 不过即使我没有提供服务，只是给出了软件，我还是很心虚的。因为 Shadowsocks 也没有提供服务，而[它的主要作者已经被查水表了]({{ site.baseurl }}/posts/2015/09/speech-enables-speech-china-takes-aim-its-coders.html)。
 
-~~我这是在做死……~~:sob:
+<del>我这是在做死……</del>:sob:
 
 -----------
 

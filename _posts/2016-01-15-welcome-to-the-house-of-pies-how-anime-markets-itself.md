@@ -21,13 +21,13 @@ headpic_alt: 钢之炼金术师
 
 不相信我吗？那你应该会相信托马斯·罗明，他发了[这条推文](https://twitter.com/Thomasintokyo/status/679101850189217792)：
 
->	Anime before - Anime now  
->	![Anime before - Anime now]({{ site.baseurl }}/images/2016/01/anime-before-now.jpg)
->	
->	-	以前的动漫：镭射枪、惊异感、银河探险、文学经典、酷英雄、戏剧、喜剧、吸引人的领导人物、科学幻想、雪茄、记忆犹新的设计、未来的展望、暴力、强壮甚至没有胸部的女性角色、原创概念、各种各样的性、悬念、引人注目的气氛、悬疑、悲剧、伟大的冒险、史诗般的战斗、可爱的少女；
->	-	现在的动漫：可爱的少女、可爱的少女、可爱的少女、可爱的少年、可爱的少女……
->	
->	&mdash; ThomasRomain ロマン・トマ (@Thomasintokyo) [December 22, 2015](https://twitter.com/Thomasintokyo/status/679101850189217792)
+>   Anime before - Anime now  
+>   ![Anime before - Anime now]({{ site.baseurl }}/images/2016/01/anime-before-now.jpg)
+>   
+>   -	以前的动漫：镭射枪、惊异感、银河探险、文学经典、酷英雄、戏剧、喜剧、吸引人的领导人物、科学幻想、雪茄、记忆犹新的设计、未来的展望、暴力、强壮甚至没有胸部的女性角色、原创概念、各种各样的性、悬念、引人注目的气氛、悬疑、悲剧、伟大的冒险、史诗般的战斗、可爱的少女；
+>   -	现在的动漫：可爱的少女、可爱的少女、可爱的少女、可爱的少年、可爱的少女……
+>   
+>   &mdash; ThomasRomain ロマン・トマ (@Thomasintokyo) [December 22, 2015](https://twitter.com/Thomasintokyo/status/679101850189217792)
 
 或者《新世纪福音战士》的创造者庵野秀明，他[这样说](http://www.techtimes.com/articles/55317/20150526/evangelion-creator-hideaki-anno-thinks-anime-will-die-within-next-two-decades.htm)道：
 
