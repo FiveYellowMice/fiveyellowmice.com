@@ -106,4 +106,4 @@ Akregator 还有很多其他设置项，这个就要大家自己摸索了。
 
 最后，大家实践一下，就拿这个 RSS 来练一下手，如何？（坏笑）
 
-<https://fiveyellowmice.github.io/feed.xml>
+<https://fiveyellowmice.com/feed.xml>
