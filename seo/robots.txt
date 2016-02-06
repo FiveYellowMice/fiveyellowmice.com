@@ -7,3 +7,4 @@ Allow: /
 Disallow: /tags/
 Disallow: /search/
 Disallow: /links/
+Disallow: /cdn-cgi/
