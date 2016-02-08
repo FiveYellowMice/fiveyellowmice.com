@@ -14,7 +14,6 @@ kramdown:
   hard_wrap: false
   auto_ids: true
 exclude: [Gemfile, Gemfile.lock]
-permalink: /posts/:year/:month/:title.html
 
 # Plugins
 gems:
@@ -33,6 +32,7 @@ defaults:
       path: ""
       type: "posts"
     values:
+      permalink: /posts/:year/:month/:title.html
       excerptable: true
       sitemap: true
       comments: true
