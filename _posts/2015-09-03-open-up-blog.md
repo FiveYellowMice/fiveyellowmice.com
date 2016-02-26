@@ -24,6 +24,6 @@ shortlink: uah
 
 从以上的文字可以看出来，我的语文水平很差。所以还请[多多指教][contribute]了。
 
-[chiken-soup]: http://www.zhihu.com/question/23585527
-[program-think]: http://program-think.blogspot.com/
+[chiken-soup]: https://www.zhihu.com/question/23585527
+[program-think]: https://program-think.blogspot.com/
 [contribute]: https://github.com/FiveYellowMice/fiveyellowmice.github.io/issues

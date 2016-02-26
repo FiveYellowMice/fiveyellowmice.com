@@ -11,8 +11,8 @@ shortlink: bos
 
 <!--more-->
 
-[program-think]: http://program-think.blogspot.com.au/?m=1
-[newest-post]: http://program-think.blogspot.com.au/2015/08/Technology-and-Freedom.html?m=1
+[program-think]: https://program-think.blogspot.com/
+[newest-post]: https://program-think.blogspot.com/2015/08/Technology-and-Freedom.html
 
 ---------------------
 
