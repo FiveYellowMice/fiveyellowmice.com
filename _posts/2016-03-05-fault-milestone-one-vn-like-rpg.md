@@ -2,6 +2,7 @@
 title: fault milestone one ：像 RPG 一样的视觉小说
 date: 2016-03-05 01:33
 tags: ACG 个人
+shortlink: qok
 headpic: fault-ms1-title-page.jpg
 headpic_alt: fault milestone one 的标题画面
 ---
