@@ -9,4 +9,4 @@ script:
     - bundle exec jekyll build
 
 after_success:
-    - "if [[ $TRAVIS_BRANCH == master ]]; then echo \"This is going to be deployed.\"; fi"
+    - "if [[ $TRAVIS_BRANCH == master ]]; then ./deploy-from-travis.sh; fi"

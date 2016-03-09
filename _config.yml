@@ -14,7 +14,7 @@ kramdown:
   input: GFM
   hard_wrap: false
   auto_ids: true
-exclude: [Gemfile, Gemfile.lock]
+exclude: [Gemfile, Gemfile.lock, deploy-from-travis.sh]
 
 # Plugins
 gems:
