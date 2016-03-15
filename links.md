@@ -28,7 +28,7 @@ comments: true
 
 -------------------
 
-虽然我不想摆什么架子吧，不过我觉得我的友情链接还是得有一些水平的，也就是以下几个十分严苛的要求：
+虽然我不想摆什么架子吧，不过我觉得我的友情链接还是得有一些水平的，也就是要按照以下几条基本法：
 
 1.	80% 以上的页面支持 [HTTPS]({{ site.baseurl }}/posts/2015/10/fight-a-peoples-war-for-https.html) 访问（不包括使用 [CNNIC](https://program-think.blogspot.com/2010/02/about-cnnic.html) 等国产证书的）。
 2.	热爱自由。
@@ -36,6 +36,6 @@ comments: true
 4.	在墙外能访问正常。
 5.	博客的话，有及时更新的 [RSS]({{ site.baseurl }}/posts/2015/09/usage-of-rss.html) 。
 
-*通常* 只有满足了以上要求，我才能够加友情链接。哦对了，还得我看着顺眼才行。
+当然，我的决定权也是很重要的。
 
 那么肉麻的话：欢迎申请加友情链接！无论是发邮件（在页面底部）还是在 GitHub 发 Issue ，都可以联系到我。
