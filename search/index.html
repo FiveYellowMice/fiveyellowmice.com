@@ -3,11 +3,145 @@ layout: page
 title: 搜索
 ---
 
-<p>这是一个站内搜索页面，在此处可以搜索到本博客中的所有博文。<noscript>但是要搜索的话，请启用 JavaScript 。</noscript></p>
+<p>这是一个站内搜索页面，在此处可以搜索到本博客中的所有博文。</p>
 
 <p>搜索功能是全靠我自己写的，所以可能不是很给力或者有 bug 。目前只能搜索标题，没法搜索内容，望在有生之年能改进。</p>
 
-<input type="text" id="search-keywords-box" onkeydown="javascript: keyDown(event)" autocomplete="off" autofocus="autofocus">
-<button type="submit" id="search-button" onclick="javascript: search()">搜索</button>
+<noscript><p>请启用 JavaScript 以进行搜索。</p></noscript>
 
-<script async src="search.js"></script>
+<form id="search-panel" style="display: none">
+	<div class="keyword-box"><input type="text" name="q" autocomplete="off" autofocus></div>
+	<div class="search-button"><input type="submit" value="搜索"></div>
+</form>
+
+<p id="search-status" style="display: none"></p>
+
+<ul class="post-list" id="results-list" style="display: none"></ul>
+
+<style>
+	#search-panel {
+		max-width: 400px;
+		display: flex;
+		display: -webkit-flex;
+		align-items: center;
+		-webkit-align-items: center;
+	}
+	
+	.keyword-box {
+		display: block;
+		overflow: hidden;
+		width: 100%;
+	}
+	.keyword-box input {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 5px;
+		border: none;
+		border-bottom: 2px solid #CCC;
+		font-size: 16px;
+		
+		transition: border-color 0.2s;
+	}
+	.keyword-box input:focus {
+		outline: none;
+		border-color: #2196F3;
+	}
+	
+	.search-button {
+		display: block;
+		float: right;
+		width: 100px;
+		margin-left: 5px;
+	}
+	.search-button input {
+		box-sizing: border-box;
+		width: 100%;
+		font-size: 16px;
+		color: white;
+		padding: 5px;
+		border: none;
+		border-radius: 2px;
+		background: #00B0FF;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+		cursor: pointer;
+		
+		transition: box-shadow 0.2s, background 0.2s;
+	}
+	.search-button input:hover {
+		box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+	}
+	.search-button input:focus {
+		box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+		outline: none;
+	}
+	.search-button input:active {
+		background: #0091EA;
+	}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+	// Function to remove special characters from a string
+	function casualize(input) {
+		return input.toLowerCase().match(/[^ :;,.\-_\"\'+=<>\\\/]/g).join("");
+	}
+	
+	// Get keywords from query string
+	var userInput = (function(varName) {
+		var parameters = location.search.substring(1).split("&");
+		for ( var i = 0; i < parameters.length; i++ ) {
+			var pair = parameters[i].split("=");
+			if ( pair[0] === varName ) {
+				return decodeURIComponent(pair[1]);
+			}
+		}
+		return null;
+	})("q");
+	$(".keyword-box input").attr("value", userInput.replace("+", " "));
+	
+	if (!userInput || userInput.length === 0) {
+		$("#search-panel").show();
+	} else $.getJSON("data.json", function(data) {
+		// Get results based on keywords
+		var keywords = userInput.split("+");
+		var results = [];
+		data.forEach(function (post) {
+			post.likelyPoint = 0;
+			keywords.forEach(function (word) {
+				if (casualize(post.title).search(casualize(word)) !== -1) {
+					post.likelyPoint = post.likelyPoint + 1;
+				}
+			});
+			if (post.likelyPoint > 0) results.push(post);
+		});
+		
+		// Sort results based on likelyPoint
+		results.sort(function (a, b) {
+			return b.likelyPoint - a.likelyPoint;
+		});
+		
+		results.forEach(function (item) {
+			var tags;
+			if ( item.tags.length === 0 ) {
+				tags = "";
+			} else {
+				tags = "&nbsp;&nbsp;&nbsp;<img class=\"tag-icon\" src=\"{{ site.baseurl }}/images/tags.svg\" alt=\"标签：\">&nbsp;";
+				for ( var i = 0; i < item.tags.length; i++ ) {
+					tags += "<a href=\"{{ site.baseurl }}/tags/" + item.tags[i] + ".html\">" + item.tags[i] + "</a>";
+					if ( i !== item.tags.length - 1 ) {
+						tags += ", ";
+					}
+				}
+			}
+			var meta = "<span class=\"post-meta\">" + item.date + tags + "</span>";
+			var title = "<h2 class=\"post-link\"><a href=\"" + item.url + "\">" + item.title + "</a></h2>";
+			$("#results-list").append("<li>" + meta + title + "</li>");
+		});
+		
+		// Show everything
+		$("#search-panel").show();
+		if (results.length === 0) $("#search-status").html("没有找到结果。").show();
+		$("#results-list").show();
+	});
+});
+</script>
