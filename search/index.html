@@ -16,6 +16,7 @@ title: 搜索
 
 <script>
 	document.getElementsByClassName("spinner")[0].style.display = "";
+	var startTime = new Date();
 </script>
 
 <form id="search-panel" style="display: none">
@@ -193,7 +194,11 @@ document.addEventListener("DOMContentLoaded", function() {
 		// Show everything
 		$(".spinner").hide();
 		$("#search-panel").show();
-		if (results.length === 0) $("#search-status").html("没有找到结果。").show();
+		if (results.length === 0) {
+			$("#search-status").html("没有找到结果。").show();
+		} else {
+			$("#search-status").html("找到 " + results.length + " 个结果，耗时 " + (new Date() - startTime) / 1000 + " 秒。").show();
+		}
 		$("#results-list").show();
 	});
 });
