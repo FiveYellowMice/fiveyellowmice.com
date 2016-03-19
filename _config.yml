@@ -14,7 +14,8 @@ kramdown:
   input: GFM
   hard_wrap: false
   auto_ids: true
-exclude: [Gemfile, Gemfile.lock, deploy-from-travis.sh]
+exclude: [Gemfile, Gemfile.lock, bower.json, deploy-from-travis.sh]
+keep_files: [bower_components]
 
 # Plugins
 gems:

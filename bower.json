@@ -1,0 +1,22 @@
+{
+  "name": "fiveyellowmice.com",
+  "homepage": "https://github.com/FiveYellowMice/fiveyellowmice.com",
+  "authors": [
+    "Kaizhe Huang <hkz85825915@gmail.com>"
+  ],
+  "description": "FiveYellowMice's Blog",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "CC-BY-SA 4.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#^0.97.5"
+  }
+}

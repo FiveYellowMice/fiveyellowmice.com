@@ -4,6 +4,8 @@ rvm:
 
 install: 
     - bundle install
+    - npm install -g bower
+    - bower install -p
 
 script:
     - bundle exec jekyll build
