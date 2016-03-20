@@ -5,7 +5,13 @@ permalink: /links/
 comments: true
 ---
 
--	[<img src="https://blog.yoitsu.moe/favicon.ico" alt="图标" width="16" height="16">约伊兹的萌狼乡手札（原思考未来）](https://blog.yoitsu.moe)
+{% if site.data.links %}
+<ul>
+{% for link in site.data.links %}
+<li><a href="{{ link.url }}">{% if link.icon %}<img src="{{ link.icon }}" alt="图标" width="16" height="16" style="vertical-align: middle">{% endif %}{{ link.title }}</a></li>
+{% endfor %}
+</ul>
+{% endif %}
 
 ----------------
 
