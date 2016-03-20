@@ -4,16 +4,16 @@ sitemap: true
 ---
 
 <div class="home">
-	
+
 	<p class="site-description">{{ site.description }}</p>
-	
+
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
-			
+
 			$(".site-description").after($("<p>").attr("id", "fortune").css("display", "none"));
-			
+
 			$.getJSON( "https://api.github.com/gists/c0581783983b05ca28f7", function(data) {
-				
+
 				fortunes = JSON.parse(data.files["fortunes.json"].content);
 				randomFortune = fortunes[ Math.floor( Math.random() * fortunes.length ) ];
 				if ( randomFortune.author === undefined ) {
@@ -21,16 +21,16 @@ sitemap: true
 				} else {
 					$("#fortune").html( "<a href=\"https://gist.github.com/FiveYellowMice/c0581783983b05ca28f7\">动态格言</a>：<br>" + randomFortune.content + "<br>--" + randomFortune.author );
 				}
-				
+
 				$("#fortune").velocity("slideDown", { duration: 400, easing: "easeOutQuad" });
 			});
 		});
 	</script>
-	
-	<p>网页显示不正常？也许<a href="{{ site.baseurl }}/newstyle/">这个页面</a>能帮到你。</p>
-	
+
+	<p class="rss-subscribe">通过 <a href="{{ site.baseurl }}/subcribe/">RSS 、电子邮件或其他方式</a>获得最及时的更新</p>
+
 	<h1 class="page-heading">最新博文</h1>
-	
+
 	<ul class="post-list">
 		{% for post in site.posts limit:5 %}
 			<li>
@@ -39,20 +39,18 @@ sitemap: true
 				<h2 class="post-link">
 					<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 				</h2>
-				
+
 				{% if post.headpic %}
 				<p><img class="post-headpic" src="{{ site.baseurl }}/images/{{ post.date | date: "%Y/%m" }}/{{ post.headpic }}"{% if post.headpic_alt %} alt="{{ post.headpic_alt }}"{% endif %}></p>
 				{% endif %}
-				
+
 				<p class="post-excerpt">{{ post.excerpt | strip_html }} <a href="{{ post.url | prepend: site.baseurl }}">继续阅读 &gt;&gt;</a></p>
 			</li>
 		{% endfor %}
 	</ul>
-	
+
 	{% if site.posts.size > 5 %}
 	<p class="see-all-posts"><a href="{{ site.baseurl }}/posts/">查看至今的所有博文</a></p>
 	{% endif %}
-	
-	<p class="rss-subscribe">通过<a href="{{ site.baseurl }}/subcribe/"> RSS 、电子邮件或其他方式</a>获得最及时的更新</p>
-	
+
 </div>
