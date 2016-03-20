@@ -1,7 +1,7 @@
 ---
 title: 隐私事件，又是隐私事件，可人们何时才能真正在意？
 date: 2016-02-23 05:01
-tags: 软件 移动设备
+tags: 隐私 移动设备
 shortlink: hez
 headpic: alipay-permissions.png
 headpic_alt: 支付宝的应用权限节选
