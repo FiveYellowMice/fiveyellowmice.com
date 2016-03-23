@@ -18,6 +18,7 @@
           {% if post.headpic %}&lt;p&gt;&lt;img src=&quot;{{ site.url }}/images/{{ post.date | date: "%Y/%m" }}/{{ post.headpic }}&quot;{% if post.headpic_alt %} alt=&quot;{{ post.headpic_alt }}&quot;{% endif %}&gt;&lt;/p&gt;{% endif %}
           {% assign site_url_inline = site.url | prepend: '="' | append: "/" %}
           {{ post.content | replace: '="/', site_url_inline | xml_escape }}
+		  &lt;hr&gt;&lt;p&gt;除特殊说明外，{% if post.cc_by_sa %}本作品采用&lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;知识共享署名-相同方式共享 4.0 国际许可协议&lt;/a&gt;进行许可。{% endif %}转载时请注明来自 &lt;a href=&quot;{{ site.url }}/&quot;&gt;FiveYellowMice&#39;s Blog&lt;/a&gt; ，以及&lt;a href=&quot;{{ post.url | prepend: site.url }}&quot;&gt;原文链接&lt;/a&gt;。&lt;/p&gt;
           &lt;p&gt;&lt;em&gt;虽然 RSS 是一种很好的新闻获取方式，但是不同的 RSS 阅读器所显示的内容可能会有很大差距，有些甚至无法显示所有内容。所以为了能够获取到完整的内容，最好还是点开网页链接看。&lt;br&gt;之所以还是保留了 RSS 的全文输出，是因为摘要输出会被很多人讨厌……&lt;/em&gt;&lt;/p&gt;
         </description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
