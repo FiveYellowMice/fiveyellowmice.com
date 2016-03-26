@@ -3,7 +3,8 @@
 echo "Start deplying..."
 
 if [ ! -d ~/.ssh ]; then mkdir ~/.ssh; fi
-openssl aes-256-cbc -k $PASSWORD -in sshkey.enc -out ~/.ssh/id_rsa -d
+wget https://cdn.rawgit.com/FiveYellowMice/secret/master/ssh-key-travis.pem.enc
+openssl aes-256-cbc -k $PASSWORD -in ssh-key-travis.pem.enc -out ~/.ssh/id_rsa -d
 chmod 600 ~/.ssh/id_rsa
 
 ssh -o StrictHostKeyChecking=no \
