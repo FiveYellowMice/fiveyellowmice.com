@@ -8,7 +8,7 @@ permalink: /subcribe/
 
 ## RSS
 
-RSS 是一种传统但有效的新闻订阅方式，因为非常轻量，所以也是我推荐的订阅方式。如果你不知道该怎么使用的话，可以看一看[这篇教程]({{ site.baseurl }}/posts/2015/09/usage-of-rss.html)。
+RSS 是一种传统但有效的新闻订阅方式，因为非常轻量，所以也是我推荐的订阅方式。如果你不知道该怎么使用的话，可以看一看[这篇教程]({{ site.baseurl }}/posts/2016/04/rss-usage-ver-2.html)。
 
 链接： <{{ site.url }}/feed.xml>
 
