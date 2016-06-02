@@ -19,7 +19,7 @@ layout: default
 	
 	<p class="related-posts">
 		{% if post.previous %}前一篇文章： <a href="{{ post.previous.url | prepend: site.baseurl }}">{{ post.previous.title }}</a><br>{% endif %}
-		后一篇文章{% if post.next %}： <a href="{{ post.next.url | prepend: site.baseurl }}">{{ post.next.title }}</a>{% else %}还没有被写出来，不过你可以通过<a href="{{ site.baseurl }}/subcribe/"> RSS 、电子邮件或其他方式</a>获得最及时的更新。{% endif %}
+		后一篇文章{% if post.next %}： <a href="{{ post.next.url | prepend: site.baseurl }}">{{ post.next.title }}</a>{% else %}还没有被写出来，不过你可以通过<a href="{{ site.baseurl }}/subscribe/"> RSS 、电子邮件或其他方式</a>获得最及时的更新。{% endif %}
 	</p>
 	
 	<div class="social-share">

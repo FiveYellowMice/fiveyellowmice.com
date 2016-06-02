@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 订阅
-permalink: /subcribe/
+permalink: /subscribe/
 ---
 
 如果你喜欢我的博客的话，可以通过以下几种方式之一“订阅”这个博客，这样在有博文更新的时候，你就能收到提醒了。别担心，很方便的。
