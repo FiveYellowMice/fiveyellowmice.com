@@ -19,7 +19,6 @@
   "dependencies": {
     "jquery": "^2.2.2",
     "lodash": "^4.6.1",
-    "jquery-s2t": "^0.1.0",
     "velocity": "^1.2.3"
   }
 }

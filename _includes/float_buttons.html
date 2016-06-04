@@ -34,15 +34,16 @@
 				.attr("class", "float-button")
 				.html("<svg fill=\"#FFFFFF\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z\"/></svg>")
 				.css("background", "#2196F3")
-				.append("<div class=\"float-tooltip\"><strong>繁简转换</strong><br>将网页内容转换为正体中文。若已经是正体中文，则回到简体中文。</div>")
-				.click(convertChinese)
+				.append("<div class=\"float-tooltip\"><strong>翻译网页</strong><br>使用 Google 翻译将网页翻译至其他语言。</div>")
+				.click(function() {
+					if (document.getElementById("google_translate_element")) {
+						$("#google_translate_element").toggle();
+					} else {
+						startGoogleTranslate();
+					}
+				})
 			);
-			
-			// Auto convert to TC when page load
-			if (localStorage.getItem("traditionalChinese") === "1") {
-				convertChinese();
-			}
-			
+
 			// Display float buttons
 			$("#float-button-container").velocity("fadeIn", { delay: 2000, duration: 500, easing: "easeOutQuad" });
 			
@@ -61,21 +62,7 @@
 	if (sessionStorage && sessionStorage.getItem("backgroundImageUrl")) {
 		setBackgroundImage(sessionStorage.getItem("backgroundImageUrl"));
 	}
-	
-	// Initialize TC-SC convertion
-	var traditionalChinese = false;
-	function convertChinese() {
-		if (!traditionalChinese) {
-			traditionalChinese = true;
-			$("body").s2t();
-			localStorage.setItem("traditionalChinese", "1");
-		} else {
-			traditionalChinese = false;
-			$("body").t2s();
-			localStorage.setItem("traditionalChinese", "0");
-		}
-	}
-	
+
 	function setBackgroundImage(imageUrl) {
 		$("body").css({
 			"background-image": imageUrl,
@@ -84,5 +71,20 @@
 			"background-repeat": "no-repeat",
 			"background-size": "cover"
 		});
+	}
+	
+	// Auto start Google Translate is opened last time within a session
+	if (document.cookie.match(/(?:^|; )googtrans=([^;]*)/)) startGoogleTranslate();
+	
+	function startGoogleTranslate() {
+		$("body").append(
+			$("<div>").attr("id", "google_translate_element"),
+			$("<script>").attr("src", "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit")
+		);
+	}
+	
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({pageLanguage: 'zh-CN', autoDisplay: false, gaTrack: true, gaId: 'UA-68533985-1'}, 'google_translate_element');
+		$("head").append($("<link>").attr("rel", "stylesheet").attr("href", "{{ site.baseurl }}/css/fix-gtrans-position.css"));
 	}
 </script>

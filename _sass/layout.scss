@@ -282,6 +282,16 @@ header .site-header {
 	}
 }
 
+#google_translate_element {
+	position: fixed;
+	left: 10px;
+	bottom: 10px;
+	
+	padding: 5px;
+	box-shadow: $light-shadow;
+	background: white;
+}
+
 // Post list
 ul.post-list {
 	list-style-type: none;
