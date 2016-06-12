@@ -333,6 +333,12 @@ ul.post-list {
 	width: 100%;
 }
 
+// Mouse Emoji at the end of every post
+.post>article.post-content>p:last-child::after {
+	content: "\1F401";
+	display: inline;
+}
+
 // Tag icon
 .tag-icon {
 	vertical-align: middle;
