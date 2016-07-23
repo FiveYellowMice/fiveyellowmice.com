@@ -15,7 +15,7 @@ kramdown:
   hard_wrap: false
   auto_ids: true
 include: [.perma-redirects]
-exclude: [Gemfile, Gemfile.lock, bower.json, deploy-from-travis.sh, sshkey.enc]
+exclude: [Gemfile, Gemfile.lock, vendor, bower.json, deploy-from-travis.sh, sshkey.enc]
 
 # Plugins
 gems:
