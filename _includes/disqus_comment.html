@@ -8,6 +8,7 @@
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        /* Remind of GFW */ dsq.addEventListener("error", function() { document.getElementById("disqus_thread").innerHTML = "<p class=\"disqus-error\">加载 Disqus 上的评论时出错，请确认您已连接至国际互联网。</p>"; });
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
