@@ -5,6 +5,8 @@ permalink: /links/
 comments: true
 ---
 
+按照字母顺序排列。
+
 {% if site.data.links %}
 <ul>
 {% for link in site.data.links %}
