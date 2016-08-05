@@ -9,6 +9,6 @@ chmod 600 ~/.ssh/id_rsa
 
 ssh -o StrictHostKeyChecking=no \
 	-o LogLevel=ERROR \
-	git@$DEPLOY_SERVER hello
-git remote add vps git@$DEPLOY_SERVER:fiveyellowmice.com.git
+	git@$DEPLOY_SERVER echo hello
+git remote add vps git@$DEPLOY_SERVER:fiveyellowmice.com
 git push --quiet vps master
