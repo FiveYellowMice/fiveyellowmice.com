@@ -1,7 +1,7 @@
 ---
 title: 《如何使用 FFmpeg 进行视频转码》 v0.2 发布！
 date: 2015-10-11 08:23
-tags: FFmpeg 更新
+tags: FFmpeg
 shortlink: vlx
 headpic: ffmpeg-v0.2-git-log.png
 headpic_alt: 教程的 Git 记录

@@ -1,7 +1,7 @@
 ---
 title: 反向图片搜索：再也不用到处问图片的出处了
 date: 2016-03-16 12:56
-tags: 扫盲
+tags: ACG 安利
 shortlink: bpg
 headpic: search-memes.png
 headpic_alt: 搜索模因

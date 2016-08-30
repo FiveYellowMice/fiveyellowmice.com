@@ -1,7 +1,7 @@
 ---
 title: "“小白也能学会的 Galgame 制作”可能要弃坑了"
 date: 2015-09-06 05:24
-tags: ONScripter 更新 坏消息
+tags: ONScripter
 shortlink: opv
 headpic: snapshot93.png
 headpic_alt: "onstut.pe.hu 的网页截图"

@@ -1,7 +1,7 @@
 ---
 title: RSS 的使用方法（第二版）
 date: 2016-04-28 15:05
-tags: 软件 扫盲
+tags: 教程
 shortlink: idl
 headpic: face-front-computer.jpg
 headpic_alt: RSS 可以免去你一个个翻网站的烦恼……

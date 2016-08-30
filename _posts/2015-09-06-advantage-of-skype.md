@@ -1,7 +1,7 @@
 ---
 title: "用 Skype 的好处"
 date: 2015-09-06 10:34
-tags: 软件
+tags: 安利
 shortlink: yms
 cc_by_sa: false
 headpic: Skype_logo.png

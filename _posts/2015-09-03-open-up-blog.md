@@ -1,7 +1,7 @@
 ---
 title: "我开博客了！"
 date: 2015-09-03 12:53
-tags: 个人 更新
+tags: 博客
 shortlink: uah
 ---
 

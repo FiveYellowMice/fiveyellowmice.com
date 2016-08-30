@@ -1,7 +1,7 @@
 ---
 title: 做一个 Google 的网页代理
 date: 2015-12-08 05:25
-tags: 更新 网络 水表
+tags: GFW
 shortlink: uvb
 headpic: curly-turtle-results.png
 headpic_alt: 使用 Curly Turtle 搜索水表新闻

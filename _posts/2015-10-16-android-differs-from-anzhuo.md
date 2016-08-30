@@ -1,7 +1,7 @@
 ---
 title: Android 跟“安卓”不是一个东西
 date: 2015-10-16 02:42
-tags: 移动设备 扫盲 水表
+tags: Android 审查
 shortlink: bqm
 headpic: android-m-easter-egg.png
 headpic_alt: Android 6.0 的彩蛋

@@ -1,7 +1,7 @@
 ---
 title: 欢迎来到派之屋：对动漫经营方式的担忧
 date: 2016-01-19 04:37
-tags: ACG 翻译 坏消息
+tags: ACG 翻译
 shortlink: ikr
 headpic: winry-edward-elric-fullmetal-alchemist.jpeg
 headpic_alt: 钢之炼金术师

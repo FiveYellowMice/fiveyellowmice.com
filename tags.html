@@ -1,0 +1,13 @@
+---
+layout: page
+title: 标签
+permalink: /tags/
+---
+
+<p>以下是此博客所有的标签：</p>
+
+<ul class="tags-list">
+	{% for tag in site.tags %}
+	<li><a href="{{ site.baseurl }}/tags/{{ tag[0] }}.html">{{ tag[0] }}</a></li>
+	{% endfor %}
+</ul>

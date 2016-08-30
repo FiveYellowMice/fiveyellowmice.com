@@ -1,7 +1,7 @@
 ---
 title: "翻译了 EFF 的 Speech that Enables Speech: China Takes Aim at Its Coders"
 date: 2015-09-04 14:49
-tags: 水表 翻译
+tags: 审查 GFW 翻译
 shortlink: bos
 ---
 

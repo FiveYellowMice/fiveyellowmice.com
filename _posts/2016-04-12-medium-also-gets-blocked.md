@@ -1,7 +1,7 @@
 ---
 title: Medium 也被封了
 date: 2016-04-12 12:59
-tags: 个人 水表
+tags: GFW
 shortlink: scc
 headpic: medium-brick-wall.jpg
 headpic_alt: 墙
