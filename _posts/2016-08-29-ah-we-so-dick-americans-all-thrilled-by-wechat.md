@@ -1,7 +1,8 @@
 ---
 title: 啊我们好屌，美国人都被微信惊呆了！
-date: 2016-08-29 03:56
+date: 2016-08-30 03:03
 tags: 微信 国产 审查
+shortlink: dvm
 headpic: swamp-monster-apps.png
 headpic_alt: Swamp monster apps
 ---
@@ -63,3 +64,11 @@ headpic_alt: Swamp monster apps
 
 > Concentrating so much data on so few hands could lay the groundwork of an Orwellian world, where companies and governments can track every single movement you make.  
 > 将如此多的数据集中在如此少数人手中，可以为[奥威尔世界](https://zh.wikipedia.org/wiki/%E6%AD%90%E5%A8%81%E7%88%BE%E4%B8%BB%E7%BE%A9)奠定基础，在这样的世界中，公司和政府将可以追踪你的做的每一个动作。
+
+这样的剪辑实在是太过滑稽，让人忍俊不禁。说微信有多方便的时候很兴奋，而一旦谈到 GFW 、隐私、个人权利的时候，就畏畏缩缩不敢面对了。
+
+----------
+
+微信确实很厉害，这也是视频的主题。可是视频中也有一些批评，但这些批评太过尖锐，难以让爱国者们接受，更难以让老大哥接受。于是可怜的字幕组只好选择性失明，将“尖锐的批评”变成了“不痛不痒的批评”。
+
+真的很悲哀，好不容易外国人赞扬一下中国的软件，我们却还是需要过滤里面的内容。我们不敢面对真话，却沉迷于欺骗自己，沉浸在剪辑视频产生的自我陶醉当中。
