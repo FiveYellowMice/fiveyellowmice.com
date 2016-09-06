@@ -3,6 +3,7 @@ title: FiveYellowMice's Blog
 email: hkz85825915@gmail.com
 description: >
   我是一位早就不该中二的中二少年，最近又开了一个脑洞，于是就开了这个博客。
+author: FiveYellowMice
 baseurl: ""
 url: "https://fiveyellowmice.com"
 domain: fiveyellowmice.com
@@ -12,6 +13,7 @@ excerpt_separator: <!--more-->
 # Build settings
 kramdown:
   input: GFM
+  syntax_highlighter: rouge
   hard_wrap: false
   auto_ids: true
 include: [.perma-redirects]

@@ -1,24 +1,16 @@
 <!DOCTYPE html>
-<html lang="zh-CN"{% if page.layout == "post" %} itemscope itemtype="http://schema.org/BlogPosting"{% endif %}>
-	
+<html lang="zh-CN">
 	{% include head.html %}
-	
 	<body>
-		
 		{% include header.html %}
-		
-		<div class="page-content wrapper">
-			<div class="card">
-				{{ content }}
-			</div>
+		<div class="page-content{% if page.content_type %} page-content-{{ page.content_type }}{% elsif page.layout != 'default' %} page-content-{{ page.layout }}{% endif %}">
+			{{ content }}
 		</div>
-		
 		{% include footer.html %}
 		
-		{% include evil_script.html %}
+		{% include js_libs.html %}
 		{% include notify_local_data.html %}
-		{% include float_buttons.html %}
-		
+		{% include google_analytics.html %}
+		{% include structured_data.html %}
 	</body>
-	
 </html>

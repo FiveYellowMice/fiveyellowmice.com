@@ -2,41 +2,39 @@
 layout: default
 ---
 
-<div class="post">
+
+<article class="blog-post">
 	
-	<article class="post-content">
-		
-		<div class="post-header">
-			<h1 class="post-title">{{ page.title }}</h1>
-			<p class="post-meta">{% assign post = page %}{% include post_meta.html %}</p>
-		</div>
-		
-		{% if page.headpic %}
-		<p><img class="post-headpic" src="{{ site.baseurl }}/images/{{ page.date | date: "%Y/%m" }}/{{ page.headpic }}"{% if page.headpic_alt %} alt="{{ page.headpic_alt }}"{% endif %}></p>
-		{% endif %}
-		{{ content }}
-	</article>
-	
-	<p class="related-posts">
-		{% if post.previous %}前一篇文章： <a href="{{ post.previous.url | prepend: site.baseurl }}">{{ post.previous.title }}</a><br>{% endif %}
-		后一篇文章{% if post.next %}： <a href="{{ post.next.url | prepend: site.baseurl }}">{{ post.next.title }}</a>{% else %}还没有被写出来，不过你可以通过<a href="{{ site.baseurl }}/subscribe/"> RSS 、电子邮件或其他方式</a>获得最及时的更新。{% endif %}
-	</p>
-	
-	<div class="social-share">
-		分享到：
-		{% assign permalink = page.url | replace:'index.html','' | prepend: site.url %}
-		<a href="https://www.facebook.com/sharer.php?u={{ permalink }}" target="_blank">Facebook</a>
-		<a href="https://plus.google.com/share?url={{ permalink }}" target="_blank">Google+</a>
-		<a href="https://pinterest.com/pin/create/bookmarklet/?url={{ permalink }}&amp;description={{ page.title }}" target="_blank">Pinterest</a>
-		<a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{ permalink }}" target="_blank">QQ 空间</a>
-		<a href="https://www.reddit.com/submit?url={{ permalink }}&amp;title={{ page.title }}" target="_blank">Reddit</a>
-		<a href="https://twitter.com/share?url={{ permalink }}&amp;text={{ page.title }}" target="_blank">Twitter</a>
-		<a href="http://service.weibo.com/share/share.php?url={{ permalink }}&amp;title={{ page.title }}" target="_blank">微博</a>
-		{% if page.shortlink %}<br>短链接： <a rel="shortlink" href="https://fivy.ml/{{ page.shortlink }}">fivy.ml/{{ page.shortlink }}</a>{% endif %}
+	<div class="post-header">
+		<h1 class="post-title">{{ page.title }}</h1>
+		<p class="post-meta">{% assign post = page %}{% include post_meta.html %}</p>
 	</div>
 	
-	{% if page.comments %}
-	{% include disqus_comment.html %}
+	{% if page.headpic %}
+	<p class="post-headpic"><img class="full-width" src="{{ site.baseurl }}/images/{{ page.date | date: "%Y/%m" }}/{{ page.headpic }}"{% if page.headpic_alt %} alt="{{ page.headpic_alt }}"{% endif %}></p>
 	{% endif %}
+	{{ content }}
 	
+</article>
+
+<p class="related-posts">
+	{% if post.previous %}前一篇文章： <a href="{{ post.previous.url | prepend: site.baseurl }}">{{ post.previous.title }}</a><br>{% endif %}
+	后一篇文章{% if post.next %}： <a href="{{ post.next.url | prepend: site.baseurl }}">{{ post.next.title }}</a>{% else %}还没有被写出来，不过你可以通过<a href="{{ site.baseurl }}/subscribe/"> RSS 、电子邮件或其他方式</a>获得最及时的更新。{% endif %}
+</p>
+
+<div class="social-share">
+	分享到：
+	{% assign permalink = page.url | replace:'index.html','' | prepend: site.url %}
+	<a href="https://www.facebook.com/sharer.php?u={{ permalink | cgi_escape }}" target="_blank">Facebook</a>
+	<a href="https://plus.google.com/share?url={{ permalink | cgi_escape }}" target="_blank">Google+</a>
+	<a href="https://pinterest.com/pin/create/bookmarklet/?url={{ permalink | cgi_escape }}&amp;description={{ page.title }}" target="_blank">Pinterest</a>
+	<a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{ permalink | cgi_escape }}" target="_blank">QQ 空间</a>
+	<a href="https://www.reddit.com/submit?url={{ permalink | cgi_escape }}&amp;title={{ page.title }}" target="_blank">Reddit</a>
+	<a href="https://twitter.com/share?url={{ permalink | cgi_escape }}&amp;text={{ page.title }}" target="_blank">Twitter</a>
+	<a href="http://service.weibo.com/share/share.php?url={{ permalink | cgi_escape }}&amp;title={{ page.title }}" target="_blank">微博</a>
+	{% if page.shortlink %}<br>短链接： <a rel="shortlink" href="https://fivy.ml/{{ page.shortlink }}">fivy.ml/{{ page.shortlink }}</a>{% endif %}
 </div>
+
+{% if page.comments %}
+{% include disqus_comment.html %}
+{% endif %}

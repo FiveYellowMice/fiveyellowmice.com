@@ -1,25 +1,14 @@
 ---
 ---
 
-$header-height: 60px;
-$indent: 40px;
+$primary-color: #1BA261;
 
-$hangouts-green: #1BA261;
-$light-shadow: 0 0 5px 0 rgba(0, 0 ,0 , 0.5);
+@import "mixins";
+@import "typesetting";
+@import "header";
+@import "content";
+@import "footer";
 
-@mixin transition($transition) {
-	transition: $transition;
-	-webkit-transition: $transition;
-	-moz-transition: $transition;
-	-o-transition: $transition;
-}
-
-@mixin transition-two($transition1, $transition2) {
-	transition: $transition1, $transition2;
-	-webkit-transition: $transition1, $transition2;
-	-moz-transition: $transition1, $transition2;
-	-o-transition: $transition1, $transition2;
-}
-
-@import "base";
-@import "layout";
+@import "content_specific/post";
+@import "content_specific/home";
+@import "content_specific/tag";

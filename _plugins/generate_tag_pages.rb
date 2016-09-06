@@ -10,6 +10,7 @@ module Jekyll
 			self.read_yaml(File.join(base, '_layouts'), 'tag.html')
 			
 			self.data['title'] = name
+			self.data['layout'] = 'tag'
 		end
 	end
 	
