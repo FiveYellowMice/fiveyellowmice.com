@@ -52,8 +52,11 @@ footer {
 .social-icon {
 	width: $font-size;
 	height: $font-size;
-	vertical-align: text-top;
+	vertical-align: middle;
 	margin-right: $font-size / 4;
+	
+	position: relative;
+	top: -2px;
 }
 
 .license {
