@@ -6,7 +6,7 @@
 	{
 		"title": "{{ post.title | json_escape }}",
 		"url": "{{ post.url | prepend: site.baseurl }}",
-		"date": "{{ post.date | date: '%Y 年 %m 月 %d 日 %H 时 %M 分' }}",
+		"date": "{{ post.date | date_to_xmlschema }}",
 		"tags": [{% for tag in post.tags %}"{{ tag | json_escape }}"{% if forloop.last == false %}, {% endif %}{% endfor %}]
 	}{% if forloop.last == false %}, {% endif %}
 	{% endfor %}

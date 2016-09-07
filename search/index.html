@@ -9,10 +9,7 @@ title: 搜索
 
 <noscript><p>请启用 JavaScript 以进行搜索。</p></noscript>
 
-<div class="spinner" style="display: none">
-	<div class="double-bounce1"></div>
-	<div class="double-bounce2"></div>
-</div>
+<img class="spinner" style="display: none" src="https://util.fiveyellowmice.com/emoji/unicode/1f31a.png" alt="🌚">
 
 <script>
 	document.getElementsByClassName("spinner")[0].style.display = "";
@@ -89,54 +86,78 @@ title: 搜索
 	}
 	
 	.spinner {
-		width: 40px;
-		height: 40px;
-	
-		position: relative;
+		display: block;
+		width: 64px;
+		height: 64px;
 		margin: 100px auto;
-	}
-	
-	.double-bounce1, .double-bounce2 {
-		width: 100%;
-		height: 100%;
-		border-radius: 50%;
-		background-color: #333;
-		opacity: 0.6;
-		position: absolute;
-		top: 0;
-		left: 0;
 		
-		-webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-		animation: sk-bounce 2.0s infinite ease-in-out;
+		animation: face-moon-spin 1s linear infinite;
 	}
 	
-	.double-bounce2 {
-		-webkit-animation-delay: -1.0s;
-		animation-delay: -1.0s;
+	@-webkit-keyframes face-moon-spin {
+		0% {
+			-webkit-transform: rotate(0deg);
+		}
+		
+		50% {
+			-webkit-transform: rotate(180deg);
+		}
+		
+		100% {
+			-webkit-transform: rotate(360deg);
+		}
 	}
 	
-	@-webkit-keyframes sk-bounce {
-		0%, 100% { -webkit-transform: scale(0.0) }
-		50% { -webkit-transform: scale(1.0) }
-	}
-	
-	@keyframes sk-bounce {
-		0%, 100% { 
-			transform: scale(0.0);
-			-webkit-transform: scale(0.0);
-		} 50% { 
-			transform: scale(1.0);
-			-webkit-transform: scale(1.0);
+	@keyframes face-moon-spin {
+		0% {
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+		
+		50% {
+			-webkit-transform: rotate(180deg);
+			transform: rotate(180deg);
+		}
+		
+		100% {
+			-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
 		}
 	}
 </style>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
+	
 	// Function to remove special characters from a string
 	function casualize(input) {
 		return input.toLowerCase().match(/[^ :;,.\-_\"\'+=<>\\\/]/g).join("");
 	}
+	
+	// Result template
+	var resultTemplate = _.template("<li><article>" +
+		"<span class=\"post-meta\">" +
+			"<time class=\"post-date\" datetime=\"<%- date %>\"><%- formatDate(date) %></time>" +
+			"<% if (tags) { %><span class=\"post-tags\"><img class=\"tag-icon\" src=\"{{ site.baseurl }}/images/tags.svg\" alt=\"标签：\">&nbsp;" +
+				"<% for (var i = 0; i < tags.length; i++) { %>" +
+					"<a rel=\"tag\" href=\"{{ site.baseurl }}/tags/<%- tags[i] %>.html\"><%- tags[i] %></a>" +
+					"<% if (i !== tags.length - 1) { %>, <% } %>" +
+				"<% } %>" +
+			"</span><% } %>" +
+		"</span>" +
+		"<h1><a href=\"{{ site.baseurl }}<%- url %>\"><%- title %></a></h1>" +
+		"</aritlce></li>", {
+			imports: {
+				formatDate: function formatDate(input) {
+					var date = new Date(input);
+					return date.getUTCFullYear() + " 年 " +
+						_.padStart(date.getUTCMonth() + 1, 2, "0") + " 月 " +
+						_.padStart(date.getUTCDate(), 2, "0") + " 日 " +
+						_.padStart(date.getUTCHours(), 2, "0") + " 时 " +
+						_.padStart(date.getUTCMinutes(), 2, "0") + " 分";
+				}
+			}
+		});
 	
 	// Get keywords from query string
 	var userInput = (function(varName) {
@@ -174,21 +195,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		});
 		
 		results.forEach(function (item) {
-			var tags;
-			if ( item.tags.length === 0 ) {
-				tags = "";
-			} else {
-				tags = "&nbsp;&nbsp;&nbsp;<img class=\"tag-icon\" src=\"{{ site.baseurl }}/images/tags.svg\" alt=\"标签：\">&nbsp;";
-				for ( var i = 0; i < item.tags.length; i++ ) {
-					tags += "<a href=\"{{ site.baseurl }}/tags/" + item.tags[i] + ".html\">" + item.tags[i] + "</a>";
-					if ( i !== item.tags.length - 1 ) {
-						tags += ", ";
-					}
-				}
-			}
-			var meta = "<span class=\"post-meta\">" + item.date + tags + "</span>";
-			var title = "<h2 class=\"post-link\"><a href=\"" + item.url + "\">" + item.title + "</a></h2>";
-			$("#results-list").append("<li>" + meta + title + "</li>");
+			$("#results-list").append(resultTemplate(item));
 		});
 		
 		// Show everything
