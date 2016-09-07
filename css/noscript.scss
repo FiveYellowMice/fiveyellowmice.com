@@ -1,0 +1,25 @@
+---
+---
+
+@import "var";
+@import "mixins";
+
+// Navigation menu
+@media (max-width: 800px) {
+	.site-nav {
+		position: absolute;
+		top: ($header-height-mobile - 32px) / 2;
+		right: ($header-height-mobile - 32px) / 2;
+		margin-right: 0;
+		z-index: 20;
+	}
+	
+	.site-nav:hover .nav-items {
+		display: block;
+		margin-top: 8px;
+	}
+	
+	.nav-menu-button {
+		margin-left: auto;
+	}
+}

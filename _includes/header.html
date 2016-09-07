@@ -16,5 +16,30 @@
 	</div>
 	<script>
 		document.addEventListener("touchstart", function(){}, { capture: true, passive: true });
+		
+		document.addEventListener("DOMContentLoaded", function() {
+			$(".nav-menu-button").click(function() {
+				$(".nav-items")
+				.css("display", "none")
+				.addClass("nav-items-open")
+				.velocity("fadeIn", 150);
+				
+				$("header").append(
+					$("<div>")
+					.addClass("menu-catcher nav-menu-catcher")
+					.click(closeNavMenu)
+				);
+			});
+			
+			function closeNavMenu(event) {
+				$(event.target).remove();
+				$(".nav-items")
+				.velocity("fadeOut", { duration: 150, complete: function(element) {
+					$(element)
+					.removeClass("nav-items-open")
+					.attr("style", "");
+				}});
+			}
+		});
 	</script>
 </header>

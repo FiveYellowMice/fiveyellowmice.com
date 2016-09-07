@@ -24,7 +24,7 @@
 		"border": "1px solid #212121",
 		"border-radius": "5px",
 		"box-shadow": "0 5px 16px 0 rgba(0, 0, 0, 0.25)",
-		"z-index": "12"
+		"z-index": "10"
 	})
 	.append(
 		$("<span>")

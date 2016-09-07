@@ -1,9 +1,9 @@
 ---
 ---
 
-$primary-color: #1BA261;
-
+@import "var";
 @import "mixins";
+
 @import "typesetting";
 @import "header";
 @import "content";
