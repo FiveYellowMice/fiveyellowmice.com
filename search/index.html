@@ -3,23 +3,27 @@ layout: page
 title: 搜索
 ---
 
-<p>这是一个站内搜索页面，在此处可以搜索到本博客中的所有博文。</p>
+<p>这是一个站内搜索页面，在此处可以搜索到本博客中的所有博文。支持全文搜索，也支持一些<a id="search-syntax-help-switch" href="javascript:void(0)">没什么卵用的高级语法</a>。</p>
 
-<p>搜索功能是全靠我自己写的，所以可能不是很给力或者有 bug 。目前只能搜索标题，没法搜索内容，望在有生之年能改进。</p>
+<ol id="search-syntax-help">
+	<li>空格分隔关键词，不区分大小写。</li>
+	<li>如果不想让两个连在一起的单词被分开，在空格前加反斜杠 <code>\</code> ，或者用双引号 <code>&quot;</code> 包含多个单词。</li>
+	<li>以减号 <code>-</code> 开头的单词，将会排除包含它的结果。</li>
+	<li>排除功能暂不支持转义空格和引号。</li>
+</ol>
 
-<noscript><p>请启用 JavaScript 以进行搜索。</p></noscript>
+<p>由于这是我自己造的轮子，所以可能不是很给力或者有 bug 。如果你遇到了疑似 bug 的情况，希望你能够告诉我。</p>
 
-<img class="spinner" style="display: none" src="https://util.fiveyellowmice.com/emoji/unicode/1f31a.png" alt="🌚">
+<p><strong>数据流量用户注意： </strong>搜索时，浏览器会把所有的文章都读一遍，可能会消耗不少流量。</p>
 
-<script>
-	document.getElementsByClassName("spinner")[0].style.display = "";
-	var startTime = new Date();
-</script>
+<noscript><p>很抱歉，无法在 JavaScript 被禁用的情况下进行搜索，请启用后再试。</p></noscript>
 
 <form id="search-panel" style="display: none">
-	<div class="keyword-box"><input type="text" name="q" autocomplete="off" autofocus></div>
+	<div class="keyword-box"><input type="text" name="q" autocomplete="off"></div>
 	<div class="search-button"><input type="submit" value="搜索"></div>
 </form>
+
+<img class="spinner" style="display: none" src="https://util.fiveyellowmice.com/emoji/unicode/1f31a.png" alt="🌚">
 
 <p id="search-status" style="display: none"></p>
 
@@ -127,86 +131,17 @@ title: 搜索
 </style>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-	
-	// Function to remove special characters from a string
-	function casualize(input) {
-		return input.toLowerCase().match(/[^ :;,.\-_\"\'+=<>\\\/]/g).join("");
-	}
-	
-	// Result template
-	var resultTemplate = _.template("<li><article>" +
-		"<span class=\"post-meta\">" +
-			"<time class=\"post-date\" datetime=\"<%- date %>\"><%- formatDate(date) %></time>" +
-			"<% if (tags) { %><span class=\"post-tags\"><img class=\"tag-icon\" src=\"{{ site.baseurl }}/images/tags.svg\" alt=\"标签：\">&nbsp;" +
-				"<% for (var i = 0; i < tags.length; i++) { %>" +
-					"<a rel=\"tag\" href=\"{{ site.baseurl }}/tags/<%- tags[i] %>.html\"><%- tags[i] %></a>" +
-					"<% if (i !== tags.length - 1) { %>, <% } %>" +
-				"<% } %>" +
-			"</span><% } %>" +
-		"</span>" +
-		"<h1><a href=\"{{ site.baseurl }}<%- url %>\"><%- title %></a></h1>" +
-		"</aritlce></li>", {
-			imports: {
-				formatDate: function formatDate(input) {
-					var date = new Date(input);
-					return date.getUTCFullYear() + " 年 " +
-						_.padStart(date.getUTCMonth() + 1, 2, "0") + " 月 " +
-						_.padStart(date.getUTCDate(), 2, "0") + " 日 " +
-						_.padStart(date.getUTCHours(), 2, "0") + " 时 " +
-						_.padStart(date.getUTCMinutes(), 2, "0") + " 分";
-				}
-			}
-		});
-	
-	// Get keywords from query string
-	var userInput = (function(varName) {
-		var parameters = location.search.substring(1).split("&");
-		for ( var i = 0; i < parameters.length; i++ ) {
-			var pair = parameters[i].split("=");
-			if ( pair[0] === varName ) {
-				return decodeURIComponent(pair[1]);
-			}
-		}
-		return null;
-	})("q");
-	if (userInput) $(".keyword-box input").attr("value", userInput.replace("+", " "));
-	
-	if (!userInput || userInput.length === 0) {
-		$(".spinner").hide();
-		$("#search-panel").show();
-	} else $.getJSON("data.json", function(data) {
-		// Get results based on keywords
-		var keywords = userInput.split("+");
-		var results = [];
-		data.forEach(function (post) {
-			post.likelyPoint = 0;
-			keywords.forEach(function (word) {
-				if (casualize(post.title).search(casualize(word)) !== -1) {
-					post.likelyPoint = post.likelyPoint + 1;
-				}
-			});
-			if (post.likelyPoint > 0) results.push(post);
-		});
-		
-		// Sort results based on likelyPoint
-		results.sort(function (a, b) {
-			return b.likelyPoint - a.likelyPoint;
-		});
-		
-		results.forEach(function (item) {
-			$("#results-list").append(resultTemplate(item));
-		});
-		
-		// Show everything
-		$(".spinner").hide();
-		$("#search-panel").show();
-		if (results.length === 0) {
-			$("#search-status").html("没有找到结果。").show();
+	document.getElementById("search-syntax-help").style.display = "none";
+	document.getElementById("search-syntax-help-switch").addEventListener("click", function() {
+		var helpText = document.getElementById("search-syntax-help");
+		if (helpText.style.display === "none") {
+			helpText.style.display = "block";
 		} else {
-			$("#search-status").html("找到 " + results.length + " 个结果，耗时 " + (new Date() - startTime) / 1000 + " 秒。").show();
+			helpText.style.display = "none";
 		}
-		$("#results-list").show();
 	});
-});
+	
+	document.getElementsByClassName("spinner")[0].style.display = "block";
 </script>
+
+<script src="{{ site.baseurl }}/search/main.js" async></script>
