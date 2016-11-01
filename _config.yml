@@ -51,3 +51,8 @@ defaults:
       path: "tags"
     values:
       layout: tag
+
+collections:
+  favicons:
+    output: true
+    permalink: /:path
