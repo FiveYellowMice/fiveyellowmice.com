@@ -4,10 +4,12 @@ title: 标签
 permalink: /tags/
 ---
 
-<p>以下是此博客所有的标签：</p>
+<p>以下是此博客的所有标签，点击标签的名称来查看其中的博文。</p>
 
-<ul class="tags-list">
-	{% for tag in site.tags %}
+<ul class="tag-list">
+  {% assign tags_sorted = site.tags | sort %}
+	{% for tag in tags_sorted %}
 	<li><a href="{{ site.baseurl }}/tags/{{ tag[0] }}.html">{{ tag[0] }}</a></li>
 	{% endfor %}
+	<li></li> <li></li> <li></li> <li></li> <li></li>
 </ul>
