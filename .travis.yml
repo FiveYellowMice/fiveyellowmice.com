@@ -1,14 +1,17 @@
 language: ruby
 rvm:
-    - 2.2.4
+  - 2.3.3
+
+cache:
+  - bundler
 
 install: 
-    - bundle install
-    - npm install -g bower
-    - bower install -p
+  - bundle install
+  - npm install -g bower
+  - bower install -p
 
 script:
-    - bundle exec jekyll build
+  - bundle exec jekyll build
 
 after_success:
-    - "if [ $TRAVIS_PULL_REQUEST = false ] && [ $TRAVIS_BRANCH = master ]; then ./deploy-from-travis.sh; fi"
+  - "if [ $TRAVIS_PULL_REQUEST = false ] && [ $TRAVIS_BRANCH = master ]; then ./deploy-from-travis.sh; fi"
