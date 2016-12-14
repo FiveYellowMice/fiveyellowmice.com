@@ -18,6 +18,10 @@ body {
 	}
 }
 
+.clearfix {
+  clear: both;
+}
+
 #disqus_thread {
 	margin-top: $paragraph-gap;
 }
