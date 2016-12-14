@@ -17,13 +17,13 @@ ul, ol, li {
 p, pre, blockquote,
 ol, ul, li, hr,
 h1, h2, h3, h4, h5, h6,
-.highlighter-rouge {
+.highlighter-rouge, .footnotes {
 	margin: $paragraph-gap 0;
-	
+
 	&:first-child {
 		margin-top: 0;
 	}
-	
+
 	&:last-child {
 		margin-bottom: 0;
 	}
@@ -33,10 +33,10 @@ hr {
 	border: none;
 	height: 0;
 	overflow: visible;
-	
+
 	margin: $paragraph-gap * 2 0;
 	text-align: center;
-	
+
 	&::before {
 		content: "...";
 		color: rgba(0, 0, 0, 0.6);
@@ -44,7 +44,7 @@ hr {
 		font-size: $font-size * 2;
 		letter-spacing: $font-size * 1.2;
 		margin-left: $font-size * 1.2;
-		
+
 		position: relative;
 		top: $paragraph-gap * -1.5;
 	}
@@ -97,21 +97,21 @@ a {
 		text-decoration: none;
 		color: #2962FF;
 	}
-	
+
 	&:visited {
 		text-decoration: none;
 		color: #303F9F;
 	}
-	
+
 	&:hover, &:focus {
 		text-decoration: underline;
 		outline: none;
 	}
-	
+
 	&::-moz-focus-inner {
 		border: 0;
 	}
-	
+
 	&:active {
 		color: #F9A825;
 	}
@@ -133,11 +133,11 @@ pre {
 	tab-size: 4;
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
-	
+
 	padding: $font-size * 0.375 $font-size * 0.75;
 	background: rgba(0, 0, 0, 0.05);
 	overflow-x: auto;
-	
+
 	code {
 		background: none;
 		word-break: inherit;

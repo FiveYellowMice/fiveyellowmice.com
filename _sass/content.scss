@@ -8,9 +8,9 @@ body {
 	padding: $content-padding * 0.75 $content-padding;
 	border-radius: 2px;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-	
+
 	background: white;
-	
+
 	.full-width {
 		max-width: calc(100% + #{$content-padding * 2});
 		width: calc(100% + #{$content-padding * 2});
@@ -30,7 +30,7 @@ body {
 	.page-content {
 		margin-top: $header-height-mobile + $paragraph-gap;
 		padding: $content-padding-mobile * 0.75 $content-padding-mobile;
-		
+
 		.full-width {
 			max-width: calc(100% + #{$content-padding-mobile * 2});
 			width: calc(100% + #{$content-padding-mobile * 2});
