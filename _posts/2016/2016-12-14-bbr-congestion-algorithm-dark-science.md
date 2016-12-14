@@ -1,6 +1,6 @@
 ---
 title: BBR 阻塞算法，真是黑科技
-date: 2016-12-14 05:34
+date: 2016-12-14 09:26
 tags: GFW Linux 个人 教程
 shortlink: bbr
 excerpt: |
