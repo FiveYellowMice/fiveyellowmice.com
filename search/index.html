@@ -37,7 +37,7 @@ title: 搜索
 		align-items: center;
 		-webkit-align-items: center;
 	}
-	
+
 	.keyword-box {
 		display: block;
 		overflow: hidden;
@@ -50,14 +50,14 @@ title: 搜索
 		border: none;
 		border-bottom: 2px solid #CCC;
 		font-size: 16px;
-		
+
 		transition: border-color 0.2s;
 	}
 	.keyword-box input:focus {
 		outline: none;
 		border-color: #2196F3;
 	}
-	
+
 	.search-button {
 		display: block;
 		float: right;
@@ -75,7 +75,7 @@ title: 搜索
 		background: #00B0FF;
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 		cursor: pointer;
-		
+
 		transition: box-shadow 0.2s, background 0.2s;
 	}
 	.search-button input:hover {
@@ -88,41 +88,41 @@ title: 搜索
 	.search-button input:active {
 		background: #0091EA;
 	}
-	
+
 	.spinner {
 		display: block;
 		width: 64px;
 		height: 64px;
 		margin: 100px auto;
-		
+
 		animation: face-moon-spin 1s linear infinite;
 	}
-	
+
 	@-webkit-keyframes face-moon-spin {
 		0% {
 			-webkit-transform: rotate(0deg);
 		}
-		
+
 		50% {
 			-webkit-transform: rotate(180deg);
 		}
-		
+
 		100% {
 			-webkit-transform: rotate(360deg);
 		}
 	}
-	
+
 	@keyframes face-moon-spin {
 		0% {
 			-webkit-transform: rotate(0deg);
 			transform: rotate(0deg);
 		}
-		
+
 		50% {
 			-webkit-transform: rotate(180deg);
 			transform: rotate(180deg);
 		}
-		
+
 		100% {
 			-webkit-transform: rotate(360deg);
 			transform: rotate(360deg);
@@ -140,8 +140,8 @@ title: 搜索
 			helpText.style.display = "none";
 		}
 	});
-	
+
 	document.getElementsByClassName("spinner")[0].style.display = "block";
 </script>
 
-<script src="{{ site.baseurl }}/search/main.js?fc=WGqAvl0" async></script>
+<script src="{{ site.baseurl }}/search/main.js?fc={{ site.data.fightcache_tokens.search_js }}" async></script>

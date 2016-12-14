@@ -2,7 +2,7 @@
 (function() {
 	if (!/(?:^|; ?)localDataAccepted=yes/.test(document.cookie)) {
 		var s = document.createElement("script");
-		s.src = "{{ site.baseurl }}/tools/notify-local-data.js?fc=ONb87dj";
+		s.src = "{{ site.baseurl }}/tools/notify-local-data.js?fc={{ site.data.fightcache_tokens.notify_local_data }}";
 		document.getElementsByTagName("body")[0].appendChild(s);
 	}
 })();

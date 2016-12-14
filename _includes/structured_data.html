@@ -5,7 +5,7 @@
 	"name": "{% if page.title %}{{ page.title | json_escape }}{% else %}{{ site.title | json_escape }}{% endif %}",
 	{% if page.layout == 'post' %}"headline": "{% if page.title %}{{ page.title | json_escape }}{% else %}{{ site.title | json_escape }}{% endif %}",{% endif %}
 	"description": "{% if page.excerptable %}{{ page.excerpt | strip_html | strip_newlines | json_escape }}{% else %}{{ site.description | json_escape }}{% endif %}",
-	"image": "{{ site.url }}{% if page.headpic %}/images/{{ page.date | date: '%Y/%m' }}/{{ page.headpic }}{% else %}/favicon-192.png{% endif %}",
+	"image": "{{ site.url }}{% if page.headpic %}/images/{{ page.date | date: '%Y/%m' }}/{{ page.headpic }}{% else %}/android-chrome-192x192.png?fc={{ site.data.fightcache_tokens.favicon }}{% endif %}",
 	"author": "{% if page.author %}{{ page.author | json_escape }}{% else %}{{ site.author | json_escape }}{% endif %}",
 	{% if page.cc_by_sa %}"license": "http://creativecommons.org/licenses/by-sa/4.0/",{% endif %}
 	{% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% unless page.date_modified %}

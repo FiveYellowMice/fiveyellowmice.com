@@ -7,17 +7,17 @@
   <meta name="description" content="{% if page.excerptable %}{{ page.excerpt | strip_html | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
 
   <meta name="theme-color" content="#1BA261">
-  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico?fc=9Zxtsfp">
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-32x32.png?fc=9Zxtsfp" sizes="32x32">
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-194x194.png?fc=9Zxtsfp" sizes="194x194">
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/android-chrome-192x192.png?fc=9Zxtsfp" sizes="192x192">
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-16x16.png?fc=9Zxtsfp" sizes="16x16">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png?fc=9Zxtsfp">
-  <link rel="manifest" href="{{ site.baseurl }}/manifest.json?fc=9Zxtsfp">
-  <link rel="mask-icon" href="{{ site.baseurl }}/safari-pinned-tab.svg?fc=9Zxtsfp" color="#1ba261">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico?fc={{ site.data.fightcache_tokens.favicon }}">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-32x32.png?fc={{ site.data.fightcache_tokens.favicon }}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-194x194.png?fc={{ site.data.fightcache_tokens.favicon }}" sizes="194x194">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/android-chrome-192x192.png?fc={{ site.data.fightcache_tokens.favicon }}" sizes="192x192">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-16x16.png?fc={{ site.data.fightcache_tokens.favicon }}" sizes="16x16">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png?fc={{ site.data.fightcache_tokens.favicon }}">
+  <link rel="manifest" href="{{ site.baseurl }}/manifest.json?fc={{ site.data.fightcache_tokens.favicon }}">
+  <link rel="mask-icon" href="{{ site.baseurl }}/safari-pinned-tab.svg?fc={{ site.data.fightcache_tokens.favicon }}" color="#1ba261">
 
-  <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}?fc=spbdsCB">
-  <noscript><link rel="stylesheet" href="{{ '/css/noscript.css' | prepend: site.baseurl }}?fc=9Cy43Vi"></noscript>
+  <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}?fc={{ site.data.fightcache_tokens.css }}">
+  <noscript><link rel="stylesheet" href="{{ '/css/noscript.css' | prepend: site.baseurl }}?fc={{ site.data.fightcache_tokens.css_noscript }}"></noscript>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
 
@@ -26,7 +26,7 @@
   <meta property="og:description" content="{% if page.excerptable %}{{ page.excerpt | strip_html | strip_newlines | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  <meta property="og:image" content="{{ site.url }}{% if page.headpic %}/images/{{ page.date | date: '%Y/%m' }}/{{ page.headpic }}{% else %}/android-chrome-192x192.png?fc=9Zxtsfp{% endif %}">
+  <meta property="og:image" content="{{ site.url }}{% if page.headpic %}/images/{{ page.date | date: '%Y/%m' }}/{{ page.headpic }}{% else %}/android-chrome-192x192.png?fc={{ site.data.fightcache_tokens.favicon }}{% endif %}">
 
   <meta property="twitter:card" content="summary">
   <meta property="twitter:site" content="@hkz85825915">
