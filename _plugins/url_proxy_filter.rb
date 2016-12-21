@@ -5,7 +5,7 @@ module Jekyll
     def url_proxy(url)
       config = @context.registers[:site].config['url_proxy']
       base = config['base']
-      key = config['key']
+      key = ENV['URL_PROXY_KEY'] || config['key']
 
       digest = OpenSSL::HMAC.hexdigest(
         OpenSSL::Digest.new('sha1'),

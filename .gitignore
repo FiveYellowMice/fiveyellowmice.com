@@ -17,3 +17,6 @@ bower_components/
 
 # File manager
 .directory
+
+# Environment file
+.env
