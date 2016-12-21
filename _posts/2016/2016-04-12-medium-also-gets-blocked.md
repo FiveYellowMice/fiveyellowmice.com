@@ -17,7 +17,7 @@ headpic_alt: 墙
 
 我这运气真不好：我开始用 Google 没几个星期，它就被屏蔽了；我开始用维基百科没几个星期，它也被屏蔽了；我刚开始用 Medium 没几个星期，它又被屏蔽了。这有点像某个暴走漫画里所说的：
 
-![I bought a Michael Jackson album](https://util.fiveyellowmice.com/kamu/e70314ae1dccb055c013dc17329465ee6b5312f8/687474703a2f2f696d67312e6a6f7972656163746f722e636f6d2f706963732f706f73742f66756e6e792d70696374757265732d6175746f2d3631313730332e6a706567)
+![I bought a Michael Jackson album]({{ 'http://img1.joyreactor.com/pics/post/funny-pictures-auto-611703.jpeg' | url_proxy }})
 
 > 我买了张迈克尔·杰克逊的专辑，然后他就死了；我买了张滑结乐团的专辑，然后 Paul Gray 就死了；我买了台 iPhone ，然后乔布斯就死了。
 > 
