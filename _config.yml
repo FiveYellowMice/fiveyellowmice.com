@@ -19,6 +19,11 @@ kramdown:
 include: [.perma-redirects]
 exclude: [Gemfile, Gemfile.lock, vendor, bower.json, deploy-from-travis.sh, sshkey.enc]
 
+# URL proxy settings
+url_proxy:
+  base: https://util.fiveyellowmice.com/kamu
+  key: 4b6e18ffde904196b82acb9b6884eee3702dd870
+
 # Plugins
 gems:
   - jemoji

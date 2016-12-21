@@ -10,7 +10,7 @@ comments: true
 {% if site.data.links %}
 <ul>
 {% for link in site.data.links %}
-<li><a href="{{ link.url }}">{% if link.icon %}<img src="{{ link.icon }}" alt="图标" width="16" height="16" style="vertical-align: middle">{% endif %}{{ link.title }}</a></li>
+<li><a href="{{ link.url }}">{% if link.icon %}<img src="{{ link.icon | url_proxy }}" alt="图标" width="16" height="16" style="vertical-align: middle">{% endif %}{{ link.title }}</a></li>
 {% endfor %}
 </ul>
 {% endif %}
