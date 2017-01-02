@@ -67,7 +67,7 @@ a.footnote {
 	}
 }
 
-.page-content-post article>p:last-child::after {
+.page-content-post article>p:last-of-type::after {
 	content: "\1F401";
 	display: inline;
 }
