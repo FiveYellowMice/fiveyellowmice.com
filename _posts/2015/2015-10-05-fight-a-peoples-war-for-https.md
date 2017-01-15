@@ -112,6 +112,6 @@ Google 甚至[修改算法](https://googlewebmastercentral.blogspot.com.au/2014/
 
 如果你是网站的站长，给你的网站加个 HTTPS 吧，当然，要签过证书的，免费的也行。这样做不但使用户安心，也让自己升值。
 
-如果你是一名普通的网民，上网的时候尽量使用 HTTPS 吧，即使它没有给你重定向，也手动输 `https://` 试试。这样不但保护自己的隐私，也让网站的管理员看到 HTTPS 的重要性。或者你可以安装 [HTTPS Everywhere](https://www.eff.org/https-everywhere%20) 这个浏览器插件，它会自动帮你尝试一个网站有没有 HTTPS 。
+如果你是一名普通的网民，上网的时候尽量使用 HTTPS 吧，即使它没有给你重定向，也手动输 `https://` 试试。这样不但保护自己的隐私，也让网站的管理员看到 HTTPS 的重要性。或者你可以安装 [HTTPS Everywhere](https://www.eff.org/https-everywhere%20) 这个浏览器插件，它会帮你在更多的网站上跳转到 HTTPS 。
 
 看到我网站左上角的小绿锁了吗？看到了它，我就能放心了，看我博客的人全都是被 HTTPS 光环笼罩的。你在看到这个小绿锁的时候，想必也是身心舒畅吧？
